@@ -180,7 +180,7 @@ const GenerateImage: FC = () => {
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-green-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"}`}
+                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-500 via-green-500 to-blue-500"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "提交生成"}
