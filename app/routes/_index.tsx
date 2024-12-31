@@ -58,7 +58,7 @@ export default function Index() {
                 to="https://github.com/luokook/CFr2-webdav"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                Workers+R2搭建个人免费webdav网盘
+                Workers+R2 搭建个人免费webdav网盘
               </Link>
             </li>
               -->
