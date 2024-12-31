@@ -26,7 +26,7 @@ USE_EXTERNAL_API = "false"
 EXTERNAL_API = ""
 EXTERNAL_MODEL = ""
 EXTERNAL_API_KEY = ""
-FLUX_NUM_STEPS = "6"
+FLUX_NUM_STEPS = "4"
 CUSTOMER_MODEL_MAP = '''{
     "FLUX.1-Schnell-CF":"@cf/black-forest-labs/flux-1-schnell",
     "DS-8-CF":"@cf/lykon/dreamshaper-8-lcm",
