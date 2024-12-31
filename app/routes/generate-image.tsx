@@ -94,7 +94,7 @@ const GenerateImage: FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-700 via-green-500 to-blue-700 px-4">
       <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg">
             AI绘画(Flux|SD)
@@ -176,17 +176,17 @@ const GenerateImage: FC = () => {
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div className="w-2"></div>
+            <div className="w-1"></div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "生成中..." : "提交生成"}
+              {isSubmitting ? "生成中..." : "启动生成"}
             </button>
             
-            <div className="w-2"></div>
+            <div className="w-1"></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
