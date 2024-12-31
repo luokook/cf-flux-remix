@@ -15,9 +15,11 @@ assets = { directory = "./build/client" }
 enabled = true
 
 [vars]
+# account_id:你的CloudFlare帐户ID
+# token:有Workers AI权限的API令牌
 CF_ACCOUNT_LIST = '''[{
-    "account_id":"你的CloudFlare帐户ID",
-    "token":"有Workers AI权限的API令牌"
+    "account_id":"0bf323aa812939e3e37caee2aadfc2b0",
+    "token":"4MPnwTI_BLshvm1QH2PecGDWtP6V-XgELnjkqk8b"
 }]'''
 API_KEY = "your_api_key_here"
 CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
