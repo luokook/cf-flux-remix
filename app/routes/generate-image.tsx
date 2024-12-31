@@ -102,7 +102,7 @@ const GenerateImage: FC = () => {
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3">
-              输入提示词：
+              提示词（支持中文）：
             </label>
             <input
               type="text"
@@ -173,7 +173,7 @@ const GenerateImage: FC = () => {
               disabled={isSubmitting}
             >
               {enhance ? "已强化提示词" : "是否强化提示词"}
-            </button>
+            </button><div>|</div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
@@ -181,8 +181,9 @@ const GenerateImage: FC = () => {
               className="flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               disabled={isSubmitting}
             >
-              重置
+              重置提示词
             </button>
+            <div>|</div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
