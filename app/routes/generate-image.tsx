@@ -176,17 +176,17 @@ const GenerateImage: FC = () => {
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div className="flex-1 bottom-20 left-10 right-10"></div>
+            <div className="flex-1 bottom-2"></div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
+                          ${isSubmitting ? "bg-green-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "提交生成"}
             </button>
             
-            <div className="flex-1 bottom-20 left-10 right-10"></div>
+            <div className="flex-1 bottom-2"></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
