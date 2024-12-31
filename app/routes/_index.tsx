@@ -52,6 +52,7 @@ export default function Index() {
                 访问 Github 项目
               </Link>
             </li>
+            <!--
             <li>
               <Link
                 to="https://github.com/luokook/CFr2-webdav"
@@ -60,6 +61,7 @@ export default function Index() {
                 Workers+R2搭建个人免费webdav网盘
               </Link>
             </li>
+              -->
             <li>
               <Link
                 to="https://github.com/luokook/CFr2-webdav"
