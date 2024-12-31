@@ -95,7 +95,7 @@ const GenerateImage: FC = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500 px-4">
-      <div className="relative bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
+      <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg">
             AI绘画(Flux|SD)
         </h1>
@@ -176,7 +176,7 @@ const GenerateImage: FC = () => {
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div className="flex"></div>
+            <div className="flex-0.5"></div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
@@ -186,7 +186,7 @@ const GenerateImage: FC = () => {
               {isSubmitting ? "生成中..." : "提交生成"}
             </button>
             
-            <div className="flex"></div>
+            <div className="flex-0.5"></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
@@ -205,8 +205,8 @@ const GenerateImage: FC = () => {
             </div>
         )}
         {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 -z-10"></div>
-        <div className="absolute bottom-0 right-0 w-32 h-32 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 -z-10"></div>
+        <div className="absolute top-0 left-0 w-32 h-32 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 -z-10"></div>
+        <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 -z-10"></div>
       </div>
     </div>
   );
