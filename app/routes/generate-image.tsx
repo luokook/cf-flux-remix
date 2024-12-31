@@ -94,7 +94,7 @@ const GenerateImage: FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-green-500 to-blue-500 px-4">
       <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg">
             AI绘画（Flux|SD）
@@ -147,6 +147,7 @@ const GenerateImage: FC = () => {
               <option value="512x512">512x512</option>
               <option value="768x768">768x768</option>
               <option value="1024x1024">1024x1024</option>
+              <option value="1024x768">1024x768</option>
             </select>
           </div>
           <div>
@@ -160,7 +161,7 @@ const GenerateImage: FC = () => {
               value={numSteps}
               onChange={(e) => setNumSteps(parseInt(e.target.value, 10))}
               min="4"
-              max="16"
+              max="8"
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             />
           </div>
@@ -168,30 +169,31 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 left-10 right-10 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
               {enhance ? "已强化提示词" : "强化提示词"}
+            </button>
+            
+            <div></div>
+            <button
+              type="submit"
+              className={`flex-1 left-10 right-10 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+                          ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "生成中..." : "提交生成"}
             </button>
             <div></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="flex-1 left-10 right-10 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               disabled={isSubmitting}
             >
               重置提示词
-            </button>
-            <div></div>
-            <button
-              type="submit"
-              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? "生成中..." : "提交生成"}
             </button>
           </div>
         </Form>
@@ -199,8 +201,7 @@ const GenerateImage: FC = () => {
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4">生成的图片：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
-            <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
-          </div>
+            </div>
         )}
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 -z-10"></div>
