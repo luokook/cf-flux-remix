@@ -97,7 +97,7 @@ const GenerateImage: FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 px-4">
       <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg">
-          白嫖 CF 的 Flux 生成图片
+            AI绘画（Flux|SD）
         </h1>
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
           <div>
