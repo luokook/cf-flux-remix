@@ -169,28 +169,29 @@ const GenerateImage: FC = () => {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 bottom-20 left-10 right-10 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div></div>
+            <div className="bottom-20 left-10 right-10"></div>
             <button
               type="submit"
-              className={`flex-1 bottom-20 left-10 right-10 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "提交生成"}
             </button>
-            <div></div>
+            
+            <div className="bottom-20 left-10 right-10"></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 bottom-20 left-10 right-10 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               disabled={isSubmitting}
             >
               重置提示词
