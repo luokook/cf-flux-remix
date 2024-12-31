@@ -52,6 +52,14 @@ export default function Index() {
                 访问 Github 项目
               </Link>
             </li>
+            <li>
+              <Link
+                to="./idioms/game"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                游戏
+              </Link>
+            </li>
             {/* 
             <li>
               <Link
@@ -71,14 +79,7 @@ export default function Index() {
               </Link>
             </li>
             {/* 可以在这里添加更多的导航项 */}
-            <li>
-              <Link
-                to="/idioms/game"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              >
-                游戏
-              </Link>
-            </li>
+            
           </ul>
         </nav>
       </div>
