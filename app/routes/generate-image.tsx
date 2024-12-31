@@ -160,7 +160,7 @@ const GenerateImage: FC = () => {
               value={numSteps}
               onChange={(e) => setNumSteps(parseInt(e.target.value, 10))}
               min="4"
-              max="8"
+              max="16"
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             />
           </div>
@@ -172,8 +172,9 @@ const GenerateImage: FC = () => {
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
-              {enhance ? "已强化提示词" : "是否强化提示词"}
-            </button><div>|</div>
+              {enhance ? "已强化提示词" : "强化提示词"}
+            </button>
+            <div></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
@@ -183,20 +184,21 @@ const GenerateImage: FC = () => {
             >
               重置提示词
             </button>
-            <div>|</div>
+            <div></div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-gradient-to-r from-indigo-500 to-indigo-700"}`}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "生成中..." : "提交"}
+              {isSubmitting ? "生成中..." : "提交生成"}
             </button>
           </div>
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4">生成的图片：</h2>
+            <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
         )}
