@@ -97,12 +97,12 @@ const GenerateImage: FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500 px-4">
       <div className="relative bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg">
-            AI绘画（Flux|SD）
+            AI绘画(Flux|SD)
         </h1>
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3">
-              提示词（支持中文）：
+              提示词(支持中文)：
             </label>
             <input
               type="text"
@@ -117,7 +117,7 @@ const GenerateImage: FC = () => {
           </div>
           <div>
             <label htmlFor="model" className="block text-white text-lg font-semibold mb-3">
-              选择模型：
+              选择模型(推荐Flux)：
             </label>
             <select
               id="model"
@@ -152,7 +152,7 @@ const GenerateImage: FC = () => {
           </div>
           <div>
             <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3">
-              生成步数：
+              生成步数(数值范围4-8)：
             </label>
             <input
               type="number"
@@ -176,17 +176,17 @@ const GenerateImage: FC = () => {
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div className="flex-1 bottom-2"></div>
+            <div className="flex-1 bottom-0"></div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-500 via-green-500 to-blue-500"}`}
+                          ${isSubmitting ? "bg-gradient-to-r from-purple-300 via-pink-300 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-500 via-green-300 to-blue-500"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "提交生成"}
             </button>
             
-            <div className="flex-1 bottom-2"></div>
+            <div className="flex-1 bottom-0"></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
