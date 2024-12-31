@@ -33,8 +33,6 @@ CUSTOMER_MODEL_MAP = '''{
     "FLUX.1-Schnell-CF":"@cf/black-forest-labs/flux-1-schnell", 
     "SD-XL-Bash-CF":"@cf/stabilityai/stable-diffusion-xl-base-1.0",
     "SD-XL-Lightning-CF":"@cf/bytedance/stable-diffusion-xl-lightning",
-    "DS-8-CF":"@cf/lykon/dreamshaper-8-lcm",
-    "SD-V1-5-Img2img":"@cf/runwayml/stable-diffusion-v1-5-img2img",
-    "SD-V1-5-Inpainting":"@cf/runwayml/stable-diffusion-v1-5-inpainting"
+    "DS-8-CF":"@cf/lykon/dreamshaper-8-lcm"
 }'''
 getme = "测试专用"
