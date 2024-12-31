@@ -148,6 +148,8 @@ const GenerateImage: FC = () => {
               <option value="768x768">768x768</option>
               <option value="1024x1024">1024x1024</option>
               <option value="1024x768">1024x768</option>
+              <option value="2048x1024">2048x1024</option>
+              <option value="2048x2048">2048x2048</option>
             </select>
           </div>
           <div>
