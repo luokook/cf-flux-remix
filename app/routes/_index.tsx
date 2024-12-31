@@ -46,15 +46,15 @@ export default function Index() {
             </li>
             <li>
               <Link
-                to="https://github.com/aigem/cf-flux-remix"
+                to="https://github.com/luokook/cf-flux-remix"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                访问 Github
+                访问 Github 项目
               </Link>
             </li>
             <li>
               <Link
-                to="https://github.com/aigem/CFr2-webdav"
+                to="https://github.com/luokook/CFr2-webdav"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 Workers+R2搭建个人免费webdav网盘
@@ -62,10 +62,10 @@ export default function Index() {
             </li>
             <li>
               <Link
-                to="https://github.com/aigem/CFr2-webdav"
+                to="https://github.com/luokook/CFr2-webdav"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                自行搭建：全平台视频下载助手
+                新项目，敬请期待……
               </Link>
             </li>
             {/* 可以在这里添加更多的导航项 */}
