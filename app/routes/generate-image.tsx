@@ -176,7 +176,7 @@ const GenerateImage: FC = () => {
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div className="w-1"></div>
+            <div className="w-2"></div>
             <button
               type="submit"
               className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
@@ -186,7 +186,7 @@ const GenerateImage: FC = () => {
               {isSubmitting ? "生成中..." : "启动生成"}
             </button>
             
-            <div className="w-1"></div>
+            <div className="w-2"></div>
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
@@ -205,8 +205,8 @@ const GenerateImage: FC = () => {
             </div>
         )}
         {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-32 h-32 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 -z-10"></div>
-        <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000 -z-10"></div>
+        <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
+        <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-4000 -z-10"></div>
       </div>
     </div>
   );
