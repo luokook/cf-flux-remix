@@ -241,7 +241,7 @@ function getRandomInt(min, max) {
               {enhance ? "已强化提示词" : "强化提示词"}
             </button>
             
-            <div className="w-2"></div>
+            
             <button
               type="submit"
               className={`flex-1 px-5 py-3 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
@@ -251,7 +251,7 @@ function getRandomInt(min, max) {
               {isSubmitting ? "生成中..." : "启动生成"}
             </button>
             
-            <div className="w-2"></div>
+            
             <input type="hidden" name="enhance" value={enhance.toString()} />
             <button
               type="button"
