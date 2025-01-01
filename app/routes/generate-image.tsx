@@ -146,7 +146,7 @@ function getRandomInt(min, max) {
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-1 px-5 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="flex-auto px-5 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               >
               随机一个提示词
             </button>
