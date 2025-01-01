@@ -171,7 +171,7 @@ function getRandomInt(min, max) {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty text-white text-lg placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-lg placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
               rows="5"
               placeholder="请输入您的提示词..."
               required
@@ -244,7 +244,7 @@ function getRandomInt(min, max) {
             <div className="w-2"></div>
             <button
               type="submit"
-              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+              className={`flex-1 px-5 py-3 rounded-xl text-lg font-semibold font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
