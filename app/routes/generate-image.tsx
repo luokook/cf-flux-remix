@@ -82,13 +82,28 @@ const GenerateImage: FC = () => {
   const promptx = [
       "3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic",
       "Closeup face portrait of a black girl wearing crown of flowers, smooth soft skin, big dreamy eyes, beautiful intricate colored hair, symmetrical, anime wide eyes, soft lighting,detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws, concept art, digital painting, looking into camera",
-      "big dreamy a",
-      "big dreamy a",
-      "big dreamy a"
+      "(masterpiece:1.2), best quality,PIXIV,cozy animation scenes,scenery, building, sky, (low angle view:1.5)",
+      "On a summer evening breeze, a lovely girl lies peacefully on the autumn lawn, feeling the gentle wind blowing, with autumn maple leaves falling in the distance.",
+      "hologram of a wolf floating in space, a vibrant digital illustration, dribbble, quantum wavetracing, black background, behance hd",
+      "gold dia de los muertos pendant, intricate 2d vector geometric, cutout shape pendant, blueprint frame lines sharp edges, svg vector style, product studio shoot",
+      "Tiny cute isometric living room in a cutaway box, soft smooth lighting, soft colors, purple and blue color scheme, soft colors, 100mm lens, 3d blender render",
+      "100mm photo of isometric floating island in the sky, surreal volcano, intricate, high detail, behance, microworlds smooth, macro sharp focus, centered",
+      "A goddess of time with long golden hair, dressed in a flowing turquoise-to-blue gradient magical gown. She has delicate features, holding a magical weapon in each hand, each adorned with a clock pendant. Behind her, a radiant halo representing time glows, surrounded by swirling energies that symbolize time and space magic. The scene is enchanting and mystical, capturing the essence of both time and space. ",
+      "Furry:: 1.3 monster, cub, 4 claws, cute, (snow+snow), super high resolution, perfection, masterpiece, atmosphere",
+      "皮卡丘在沙滩上晒日光浴，卡通，3d风格",
+      "地球爆炸，3d风格，世界末日"
     ];
+  /
+ * 生成min到max之间的随机整数
+ */
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min; 
+  }
   const handleResetprompt = () => {
     
-    setPrompt(promptx[0]);
+    setPrompt(promptx[getRandomInt(0, promptx.length-1)]);
     
   };
 
