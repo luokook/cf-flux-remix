@@ -171,7 +171,7 @@ function getRandomInt(min, max) {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-lg placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-2xl placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
               rows="5"
               placeholder="请输入您的提示词..."
               required
@@ -245,7 +245,7 @@ function getRandomInt(min, max) {
             <button
               type="submit"
               className={`flex-1 px-5 py-3 mx-2 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
+                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-550 to-red-700 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "启动生成"}
@@ -256,7 +256,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 mx-2 rounded-xl border-solid border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 px-5 py-3 mx-2 rounded-xl border-solid border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置输入
