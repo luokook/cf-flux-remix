@@ -141,7 +141,7 @@ function getRandomInt(min, max) {
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3 text-shadow">
+            <label htmlFor="prompt" className="flex-1 block text-white text-lg font-semibold mb-3 text-shadow">
               提示词(支持中文)：
               <button
               type="button"
