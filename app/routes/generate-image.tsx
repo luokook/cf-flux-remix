@@ -141,7 +141,7 @@ function getRandomInt(min, max) {
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3 text-shadow">
+            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold mb-3 text-shadow">
               提示词(支持中文)：
               <button
               type="button"
@@ -234,7 +234,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 relative left-2 px-5 py-3 shadow-xl border-solid border-2 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 left-2 px-5 py-3 shadow-xl border-solid border-2 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
@@ -244,7 +244,7 @@ function getRandomInt(min, max) {
             <div className="w-2"></div>
             <button
               type="submit"
-              className={`flex-1 relative px-5 py-3 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+              className={`flex-1 px-5 py-3 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
@@ -256,7 +256,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 relative right-2 px-5 py-3 rounded-xl border-solid border-2 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 right-2 px-5 py-3 rounded-xl border-solid border-2 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置提示词
