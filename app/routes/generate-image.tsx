@@ -57,7 +57,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
 const GenerateImage: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
-  const [prompt, setPrompt] = useState("");
+  const [prompt, setPrompt] = useState("3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic");
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   const [size, setSize] = useState("1024x1024");
@@ -72,11 +72,16 @@ const GenerateImage: FC = () => {
   };
 
   const handleReset = () => {
-    setPrompt("");
+    setPrompt("3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic");
     setEnhance(false);
     setModel(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
     setSize("1024x1024");
     setNumSteps(config.FLUX_NUM_STEPS);
+  };
+
+  const handleResetprompt = () => {
+    setPrompt("");
+    
   };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -103,6 +108,13 @@ const GenerateImage: FC = () => {
           <div>
             <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3">
               提示词(支持中文)：
+              <button
+              type="button"
+              onClick={handleResetprompt}
+              className="flex-1 px-5 py-3 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              >
+              随机一个提示词
+            </button>
             </label>
             {/* 提示词框改用文本框，观感好点 */}
             {/*
