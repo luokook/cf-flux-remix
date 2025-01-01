@@ -140,13 +140,13 @@ function getRandomInt(min, max) {
             AI绘画 (Flux|SD)
         </h1>
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
-          <div>
+          <div className="relative">
             <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3 text-shadow">
               提示词(支持中文)：
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto  relative right-0 border-dashed  border-2 border-white-600 px-4 py-1 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-auto  absolute right-0 border-dashed  border-2 border-white-600 px-4 py-1 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               >
               随机一个提示词
             </button>
