@@ -93,9 +93,8 @@ const GenerateImage: FC = () => {
       "皮卡丘在沙滩上晒日光浴，卡通，3d风格",
       "地球爆炸，3d风格，世界末日"
     ];
-  /
- * 生成min到max之间的随机整数
- */
+  
+  /*生成min到max之间的随机整数*/
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
