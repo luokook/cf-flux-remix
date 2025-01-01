@@ -234,7 +234,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-5 py-3 shadow-xl border-solid border-1 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 left-0 px-5 py-3 shadow-xl border-solid border-1 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
@@ -256,7 +256,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 rounded-xl border-solid border-1 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 right-0 px-5 py-3 rounded-xl border-solid border-1 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置提示词
