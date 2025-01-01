@@ -135,7 +135,7 @@ function getRandomInt(min, max) {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 via-green-500 to-blue-800 px-4">
-      <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-lg max-w-3xl w-full">
+      <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-3xl max-w-lg w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg text-shadow">
             AI绘画 (Flux|SD)
         </h1>
@@ -146,7 +146,7 @@ function getRandomInt(min, max) {
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto  absolute right-1 border-dashed  border-2 border-white-600 px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="flex-auto  relative right-2 border-dashed  border-2 border-white-600 px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
