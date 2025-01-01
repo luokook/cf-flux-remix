@@ -141,12 +141,12 @@ function getRandomInt(min, max) {
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold mb-3 text-shadow">
+            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold mb-8 text-shadow">
               提示词(支持中文)：
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto  absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-8 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="flex-auto  absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-8 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
@@ -244,7 +244,7 @@ function getRandomInt(min, max) {
             
             <button
               type="submit"
-              className={`relative flex-1 px-5 py-3 mx-2 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+              className={`flex-1 px-5 py-3 mx-2 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
