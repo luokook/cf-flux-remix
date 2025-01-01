@@ -136,17 +136,17 @@ function getRandomInt(min, max) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 via-green-500 to-blue-800 px-4">
       <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-md w-full">
-        <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg">
-            AI绘画(Flux|SD)
+        <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg text-shadow-black">
+            AI绘画 (Flux|SD)
         </h1>
         <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3 text-shadow-black">
               提示词(支持中文)：
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto px-5 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="flex-auto px-4 py-1 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               >
               随机一个提示词
             </button>
@@ -179,7 +179,7 @@ function getRandomInt(min, max) {
             
           </div>
           <div>
-            <label htmlFor="model" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="model" className="block text-white text-lg font-semibold mb-3 text-shadow-black">
               选择模型(推荐Flux)：
             </label>
             <select
@@ -197,7 +197,7 @@ function getRandomInt(min, max) {
             </select>
           </div>
           <div>
-            <label htmlFor="size" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="size" className="block text-white text-lg font-semibold mb-3 text-shadow-black">
               图片尺寸：
             </label>
             <select
@@ -216,7 +216,7 @@ function getRandomInt(min, max) {
             </select>
           </div>
           <div>
-            <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3">
+            <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3 text-shadow-black">
               生成步数(数值范围4-8)：
             </label>
             <input
@@ -265,7 +265,7 @@ function getRandomInt(min, max) {
         </Form>
         {actionData && actionData.image && (
           <div className="mt-8">
-            <h2 className="text-2xl font-bold text-white mb-4">生成的图片：</h2>
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow-black">生成的图片：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
             </div>
         )}
