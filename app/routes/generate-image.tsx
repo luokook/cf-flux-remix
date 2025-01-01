@@ -79,8 +79,7 @@ const GenerateImage: FC = () => {
     setNumSteps(config.FLUX_NUM_STEPS);
   };
 
-  const handleResetprompt = () => {
-    const promptx = [
+  const promptx = [
       "3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic",
       "Closeup face portrait of a black girl wearing crown of flowers, smooth soft skin, big dreamy eyes, beautiful intricate colored hair, symmetrical, anime wide eyes, soft lighting, 
       detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws, concept art, digital painting, looking into camera",
@@ -88,6 +87,8 @@ const GenerateImage: FC = () => {
       "big dreamy a",
       "big dreamy a"
     ];
+  const handleResetprompt = () => {
+    
     setPrompt(promptx[0]);
     
   };
