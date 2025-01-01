@@ -57,7 +57,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
 const GenerateImage: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
-  const [prompt, setPrompt] = useState("3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic");
+  const [prompt, setPrompt] = useState("");
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   const [size, setSize] = useState("1024x1024");
@@ -72,7 +72,7 @@ const GenerateImage: FC = () => {
   };
 
   const handleReset = () => {
-    setPrompt("3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic");
+    setPrompt("");
     setEnhance(false);
     setModel(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
     setSize("1024x1024");
@@ -80,7 +80,14 @@ const GenerateImage: FC = () => {
   };
 
   const handleResetprompt = () => {
-    setPrompt("");
+    const promptx = [
+      "3d fluffy llama, closeup cute and adorable, cute big circular reflective eyes, long fuzzy fur, Pixar render, unreal engine cinematic smooth, intricate detail, cinematic",
+      "Closeup face portrait of a black girl wearing crown of flowers, smooth soft skin, big dreamy eyes, beautiful intricate colored hair, symmetrical, anime wide eyes, soft lighting, detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws, concept art, digital painting, looking into camera"
+      "big dreamy a",
+      "big dreamy a",
+      "big dreamy a"
+    ];
+    setPrompt(promptx[0]);
     
   };
 
