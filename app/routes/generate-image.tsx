@@ -139,8 +139,8 @@ function getRandomInt(min, max) {
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg text-shadow">
             AI绘画 (Flux|SD)
         </h1>
-        <Form method="post" className="space-y-8" onSubmit={handleSubmit}>
-          <div className="relative">
+        <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
+          <div className="">
             <label htmlFor="prompt" className="block text-white text-lg font-semibold mb-3 text-shadow">
               提示词(支持中文)：
               <button
