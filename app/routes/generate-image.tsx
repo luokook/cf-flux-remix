@@ -135,7 +135,7 @@ function getRandomInt(min, max) {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 via-green-500 to-blue-800 px-4">
-      <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-3xl w-full">
+      <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-lg max-w-3xl w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg text-shadow">
             AI绘画 (Flux|SD)
         </h1>
@@ -146,7 +146,7 @@ function getRandomInt(min, max) {
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto  absolute right-0 border-dashed  border-2 border-white-600 px-4 py-1 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="flex-auto  absolute right-1 border-dashed  border-2 border-white-600 px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
@@ -234,7 +234,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 absolute left-0 px-5 py-3 shadow-xl border-solid border-2 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 absolute left-2 px-5 py-3 shadow-xl border-solid border-2 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
               disabled={isSubmitting}
             >
@@ -244,7 +244,7 @@ function getRandomInt(min, max) {
             <div className="w-2"></div>
             <button
               type="submit"
-              className={`flex-1 px-5 py-3 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
+              className={`flex-1 absolute px-5 py-3 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
                           ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
@@ -256,7 +256,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 absolute right-0 px-5 py-3 rounded-xl border-solid border-2 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 absolute right-2 px-5 py-3 rounded-xl border-solid border-2 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置提示词
