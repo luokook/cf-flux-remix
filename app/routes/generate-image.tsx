@@ -141,12 +141,12 @@ function getRandomInt(min, max) {
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold mb-8 text-shadow">
+            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold mb-3 text-shadow">
               提示词(支持中文)：
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto  absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-8 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-white-600 shadow-xl"
+              className="flex-auto  absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
@@ -171,7 +171,7 @@ function getRandomInt(min, max) {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-xl placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-lg placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
               rows="5"
               placeholder="请输入您的提示词..."
               required
@@ -234,8 +234,8 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`relative flex-1 left-8 px-5 py-3 mx-2 shadow-xl border-solid border-2 border-white-600 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
-                          ${enhance ? "bg-gradient-to-r from-green-400 to-green-600" : "bg-gradient-to-r from-gray-400 to-gray-600"}`}
+              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-solid border-2 border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+                          ${enhance ? "bg-gradient-to-r from-green-400 to-green-800" : "bg-gradient-to-r from-gray-400 to-gray-800"}`}
               disabled={isSubmitting}
             >
               {enhance ? "已强化提示词" : "强化提示词"}
@@ -256,10 +256,10 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="relative flex-1 right-8 px-5 py-3 mx-2 rounded-xl border-solid border-2 border-white-600 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 px-5 py-3 mx-2 rounded-xl border-solid border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-600 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
-              重置提示词
+              重置输入
             </button>
           </div>
         </Form>
