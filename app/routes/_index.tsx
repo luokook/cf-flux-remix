@@ -78,6 +78,7 @@ export default function Index() {
                 语音识别(语音转文字)
               </Link>
             </li>
+    */}
             <li>
               <Link
                 to="/translation"
@@ -86,7 +87,7 @@ export default function Index() {
                 AI翻译
               </Link>
             </li>
- */}
+
             <li>
               <Link
                 to="https://github.com/luokook"
