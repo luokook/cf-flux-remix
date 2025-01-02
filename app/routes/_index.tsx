@@ -91,34 +91,34 @@ export default function Index() {
         <div className="relative mt-8 text-white text-center border-dashed border-3 border-white-800">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
-          <div className="relative p-0.5 m-0.5">CF-AI状态：
+          <div className="m-0.5">CF-AI状态：
              <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </span>
           </div>
           
-          <div className="relative p-0.5 m-0.5">AI绘画模型：
+          <div className="m-0.5">AI绘画模型：
              <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </span>
             </div>
           
-          <div className="relative p-0.5 m-0.5">翻译模型：
+          <div className="m-0.5">翻译模型：
             <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-blue-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </span>
           </div>
           
-          <div className="relative p-0.5 m-0.5">API Key：
+          <div className="m-0.5">API Key：
             <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </span>
             </div>
           
-          <div className="relative p-0.5 m-0.5">CF账号：
+          <div className="m-0.5">CF账号：
             <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
