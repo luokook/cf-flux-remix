@@ -1,10 +1,9 @@
-import { json, type LoaderFunction } from "@remix-run/cloudflare";
-import { useLoaderData } from "@remix-run/react";
+import { json, AppLoadContext, type LoaderFunction } from "@remix-run/cloudflare";
+import { useLoaderData, Link } from "@remix-run/react";
 import { createAppContext } from "../context";
 import { AppError } from "../utils/error";
-import { Link } from "@remix-run/react";
 
-export const loader: LoaderFunction = async ({ context }) => {
+export const loader: LoaderFunction = async ({ context }: { context: AppLoadContext }) => {
   console.log("Loader started");
   const appContext = createAppContext(context);
   const { imageGenerationService, config } = appContext;
@@ -30,6 +29,7 @@ export const loader: LoaderFunction = async ({ context }) => {
 };
 
 export default function Index() {
+  const { cfAiStatus, configStatus } = useLoaderData<typeof loader>();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
       <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10">
