@@ -72,10 +72,30 @@ export default function Index() {
                 新项目，敬请期待……
               </Link>
             </li>
+
+            <li>
+              <Link
+                to="/idioms/game"
+                className="block w-full text-center px-6 py-4 text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-green-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400"
+              >
+                看图猜成语游戏
+              </Link>
+            </li>
+
+            
             {/* 可以在这里添加更多的导航项 */}
             
           </ul>
         </nav>
+
+        <div className="mt-8 text-white text-center">
+          <h2 className="text-2xl font-bold mb-4">系统状态</h2>
+          <p>CF AI 状态: <span className={cfAiStatus === "已连接" ? "text-green-400" : "text-red-400"}>{cfAiStatus}</span></p>
+          <p>API Key: <span className={configStatus.API_KEY === "已设置" ? "text-green-400" : "text-red-400"}>{configStatus.API_KEY}</span></p>
+          <p>翻译模型: {configStatus.CF_TRANSLATE_MODEL}</p>
+          <p>CF 账户列表: <span className={configStatus.CF_ACCOUNT_LIST === "已设置" ? "text-green-400" : "text-red-400"}>{configStatus.CF_ACCOUNT_LIST}</span></p>
+          <p>自定义模型映射: <span className={configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "text-green-400" : "text-red-400"}>{configStatus.CUSTOMER_MODEL_MAP}</span></p>
+        </div>
       </div>
     </div>
   );
