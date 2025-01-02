@@ -91,10 +91,8 @@ export default function Index() {
         <div className="mt-8 text-white text-center border-dashed border-2 border-white-800">
           <h2 className="text-2xl font-bold mb-4">系统状态</h2>
           <p>CF-AI状态：
-            <div className="mx-2 my-1 px-3 py-1 text-center rounded-xl border-2 border-white-800">
-            <span className={cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}>{cfAiStatus}</span>
-            </div>
-            </p>
+             <span className=mx-1  px-1 text-center rounded-xl border-dashed border-2 border-white-800 {cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}>{cfAiStatus}</span>
+          </p>
           <p>AI绘画模型：
             <div className="mx-2 my-1 px-3 py-1 text-center rounded-xl border-2 border-white-800">
             <span className={configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}>{configStatus.CUSTOMER_MODEL_MAP}</span>
