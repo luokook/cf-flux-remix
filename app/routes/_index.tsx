@@ -66,21 +66,12 @@ export default function Index() {
             
             <li>
               <Link
-                to="https://github.com/luokook/CFr2-webdav"
+                to="https://github.com/luokook"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 新项目，敬请期待……
               </Link>
             </li>
-
-           {/* <li>
-              <Link
-                to="/idioms/game"
-                className="block w-full text-center px-6 py-4 text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-green-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400"
-              >
-                看图猜成语游戏
-              </Link>
-            </li>*/}
 
             
             {/* 可以在这里添加更多的导航项 */}
@@ -88,7 +79,7 @@ export default function Index() {
           </ul>
         </nav>
 
-        <div className="rounded-full border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
+        <div className="rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="flex justify-center m-0.5">CF-AI状态：
