@@ -88,13 +88,13 @@ export default function Index() {
           </ul>
         </nav>
 
-        <div className="mt-8 text-white text-center">
+        <div className="mt-8 text-white text-center border-dashed border-2 border-white-800">
           <h2 className="text-2xl font-bold mb-4">系统状态</h2>
-          <p>CF AI 状态: <span className={cfAiStatus === "已连接" ? "text-green-400" : "text-red-400"}>{cfAiStatus}</span></p>
-          <p>API Key: <span className={configStatus.API_KEY === "已设置" ? "text-green-400" : "text-red-400"}>{configStatus.API_KEY}</span></p>
-          <p>翻译模型: {configStatus.CF_TRANSLATE_MODEL}</p>
-          <p>CF 账户列表: <span className={configStatus.CF_ACCOUNT_LIST === "已设置" ? "text-green-400" : "text-red-400"}>{configStatus.CF_ACCOUNT_LIST}</span></p>
-          <p>自定义模型映射: <span className={configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "text-green-400" : "text-red-400"}>{configStatus.CUSTOMER_MODEL_MAP}</span></p>
+          <p>CF-AI状态： <span className={cfAiStatus === "已连接" ? "bg-green-400" : "bg-red-400"}>{cfAiStatus}</span></p>
+          <p>AI绘画模型：<span className={configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-400" : "bg-red-400"}>{configStatus.CUSTOMER_MODEL_MAP}</span></p>
+          <p>翻译模型：{configStatus.CF_TRANSLATE_MODEL}</p>
+          <p>API Key：<span className={configStatus.API_KEY === "已设置" ? "bg-green-400" : "bg-red-400"}>{configStatus.API_KEY}</span></p>
+          <p>CF账号：<span className={configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-400" : "bg-red-400"}>{configStatus.CF_ACCOUNT_LIST}</span></p>
         </div>
       </div>
     </div>
