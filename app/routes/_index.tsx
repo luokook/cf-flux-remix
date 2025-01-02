@@ -44,7 +44,9 @@ export default function Index() {
                 AI绘画
               </Link>
             </li>
-  {/*
+            
+{/*
+          
             <li>
               <Link
                 to="/imagetotext"
@@ -78,7 +80,9 @@ export default function Index() {
                 语音识别(语音转文字)
               </Link>
             </li>
-    */}
+
+
+  */}
             <li>
               <Link
                 to="/translation"
