@@ -111,15 +111,15 @@ export default function Index() {
             </span>
           </div>
           
-          <div className="relative m-0.5">API Key：
-            <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+          <div className="flex relative m-0.5">API Key：
+            <span className={`flex relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </span>
             </div>
           
-          <div className="relative m-0.5">CF账号：
-            <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+          <div className="flex relative m-0.5">CF账号：
+            <span className={`flex relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </span>
