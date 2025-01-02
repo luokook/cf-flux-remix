@@ -98,7 +98,7 @@ export default function Index() {
               </span>
           </div>
           
-          <div className="relative pp-0.5 m-0.5">AI绘画模型：
+          <div className="relative p-0.5 m-0.5">AI绘画模型：
              <span className={`p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
