@@ -5,7 +5,7 @@ import { Config } from '../config';
 export class AiTranslationService {
   constructor(private config: Config) {}
 
-  async aiTranslation(prompt: string, model: string, lang1: string, lang2: string): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
+  async aiTranslation(prompt: string, lang1: string, lang2: string, model: string ): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
     
     try {
       const translatedPrompt = await this.translatePrompt(prompt);
@@ -22,7 +22,7 @@ export class AiTranslationService {
     };
   }
 
-  private async translatePrompt(prompt: string): Promise<string> {
+  private async translatePrompt(prompt: string, lang1: string, lang2: string, model: string): Promise<string> {
     if (!this.config.CF_IS_TRANSLATE) {
       console.error("翻译模型未设置");
       return prompt;// 如果失败,返回原始提示词
