@@ -92,7 +92,7 @@ export default function Index() {
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="flex justify-center m-0.5">CF-AI状态：
-             <div className={`flex p-1 text-center rounded-full border-dashed border-1 border-white-800 
+             <div className={`flex p-1 text-center  border-dashed border-1 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </div>
