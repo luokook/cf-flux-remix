@@ -123,7 +123,7 @@ export default function Index() {
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </div>
-           </div>
+            </div>
           
         </div>
       </div>
