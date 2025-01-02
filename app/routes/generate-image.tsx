@@ -245,7 +245,7 @@ function getRandomInt(min, max) {
             <button
               type="submit"
               className={`flex-1 px-5 py-3 mx-2 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-550 to-red-700 cursor-not-allowed" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
+                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-550 to-red-700 cursor-not-allowed rounded-full" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700 rounded-xl"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "启动生成"}
