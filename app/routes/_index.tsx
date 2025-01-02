@@ -44,14 +44,7 @@ export default function Index() {
                 AI绘画
               </Link>
             </li>
-            li>
-              <Link
-                to="/imagetoword"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              >
-                图像转文字
-              </Link>
-            </li>
+            
             <li>
               <Link
                 to="https://github.com/luokook/cf-flux-remix"
@@ -62,12 +55,13 @@ export default function Index() {
             </li>
             <li>
               <Link
-                to="/translation"
+                to="/imagetoword"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                AI翻译
+                图像转文字
               </Link>
             </li>
+            
             <li>
               <Link
                 to="/chat"
@@ -92,7 +86,14 @@ export default function Index() {
                 语音转文字
               </Link>
             </li>
-            
+            <li>
+              <Link
+                to="/translation"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                AI翻译
+              </Link>
+            </li>
             {/* 
             <li>
               <Link
