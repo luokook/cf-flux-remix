@@ -91,39 +91,39 @@ export default function Index() {
         <div className="mt-8 text-white text-center border-dashed border-3 border-white-800">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
-          <div>CF-AI状态：
+          <p>CF-AI状态：
              <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
-                 ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
+                 ${cfAiStatus === "已连接" ? "bg-green-500" : "bg-red-500"}`}>
                    {cfAiStatus}
               </span>
-          </div>
+          </p>
           
-          <div>AI绘画模型：
+          <p>AI绘画模型：
              <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
-                 ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
+                 ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-500" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </span>
-            </div>
+            </p>
           
-          <div>翻译模型：
-            <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 bg-indigo-500`}>
+          <p>翻译模型：
+            <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-indigo-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </span>
-          </div>
+          </p>
           
-          <div>API Key：
+          <p>API Key：
             <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
-                 ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
+                 ${configStatus.API_KEY === "已设置" ? "bg-green-500" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </span>
-            </div>
+            </p>
           
-          <div>CF账号：
+          <p>CF账号：
             <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
-                 ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
+                 ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-500" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </span>
-            </div>
+            </p>
           
         </div>
       </div>
