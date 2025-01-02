@@ -32,7 +32,7 @@ export default function Index() {
   const { cfAiStatus, configStatus } = useLoaderData<typeof loader>();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
-      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-2aaxl w-full">
+      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-2xl w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center">CF Flux Remix</h1>
         <nav>
           <ul className="space-y-4">
@@ -91,39 +91,39 @@ export default function Index() {
         <div className="mt-8 text-white text-center border-dashed border-2 border-white-800">
           <h2 className="text-2xl font-bold mb-4">系统状态</h2>
           
-          <p>CF-AI状态：
+          <div>CF-AI状态：
              <span className={`px-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </span>
-          </p>
+          </div>
           
-          <p>AI绘画模型：
+          <div>AI绘画模型：
              <span className={`px-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </span>
-            </p>
+            </div>
           
-          <p>翻译模型：
+          <div>翻译模型：
             <span className={`px-1 text-center rounded-xl border-dashed border-2 border-white-800 bg-indigo-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </span>
-          </p>
+          </div>
           
-          <p>API Key：
+          <div>API Key：
             <span className={`px-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </span>
-            </p>
+            </div>
           
-          <p>CF账号：
+          <div>CF账号：
             <span className={`px-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </span>
-            </p>
+            </div>
           
         </div>
       </div>
