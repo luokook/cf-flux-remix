@@ -2,7 +2,7 @@
 import { AppError } from '../utils/error';
 import { Config } from '../config';
 
-export class aiTranslationService {
+export class AiTranslationService {
   constructor(private config: Config) {}
 
   async aiTranslation(prompt: string, model: string, lang1: string, lang2: string): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
