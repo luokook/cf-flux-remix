@@ -32,7 +32,7 @@ export default function Index() {
   const { cfAiStatus, configStatus } = useLoaderData<typeof loader>();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
-      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-2xl w-full">
+      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-xl w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center">CF Flux Remix</h1>
         <nav>
           <ul className="space-y-4">
