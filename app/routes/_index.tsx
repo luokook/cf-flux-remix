@@ -88,7 +88,7 @@ export default function Index() {
           </ul>
         </nav>
 
-        <div className="mt-8 text-white text-center border-dashed border-3 border-white-800">
+        <div className="relative mt-8 text-white text-center border-dashed border-3 border-white-800">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="relative">CF-AI状态：
