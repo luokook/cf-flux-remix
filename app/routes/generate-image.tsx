@@ -146,7 +146,7 @@ function getRandomInt(min, max) {
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex-auto  absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
@@ -234,7 +234,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-solid border-2 border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-dashed border-2 border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-800" : "bg-gradient-to-r from-gray-400 to-gray-800"}`}
               disabled={isSubmitting}
             >
@@ -245,7 +245,7 @@ function getRandomInt(min, max) {
             <button
               type="submit"
               className={`flex-1 px-5 py-3 mx-2 shadow-xl  rounded-xl text-lg font-bold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400
-                          ${isSubmitting ? "bg-gradient-to-r from-purple-500 via-pink-550 to-red-700 cursor-not-allowed rounded-full" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700 rounded-xl"}`}
+                          ${isSubmitting ? "bg-gradient-to-r from-purple-700 via-pink-500 to-red-700 cursor-not-allowed rounded-full" : "bg-gradient-to-r from-purple-700 via-green-500 to-blue-700 rounded-xl"}`}
               disabled={isSubmitting}
             >
               {isSubmitting ? "生成中..." : "启动生成"}
@@ -256,7 +256,7 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 mx-2 rounded-xl border-solid border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置输入
