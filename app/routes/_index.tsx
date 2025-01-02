@@ -88,7 +88,7 @@ export default function Index() {
           </ul>
         </nav>
 
-        <div className="rounded-full border-dashed border-3 border-white-800 mt-8 text-white justify-center text-center">
+        <div className="rounded-full border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="flex justify-center m-0.5">CF-AI状态：
