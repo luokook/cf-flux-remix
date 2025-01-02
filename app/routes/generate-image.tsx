@@ -141,12 +141,12 @@ function getRandomInt(min, max) {
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold mb-3 py-2 text-shadow">
+            <label htmlFor="prompt" className="relative block text-white text-lg font-semibold py-2 text-shadow">
               提示词(支持中文)：
               <button
               type="button"
               onClick={handleResetprompt}
-              className="absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 mb-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="absolute right-4 border-dashed  border-2 border-white-600 px-4 py-2 mx-1 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
@@ -230,7 +230,7 @@ function getRandomInt(min, max) {
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             />
           </div>
-          <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
+          <div className="flex-1 flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
             <button
               type="button"
               onClick={handleEnhanceToggle}
@@ -263,12 +263,14 @@ function getRandomInt(min, max) {
             </button>
           </div>
         </Form>
+        
         {actionData && actionData.image && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">生成的图片：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
             </div>
         )}
+        
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
         <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-4000 -z-10"></div>
