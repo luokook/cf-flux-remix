@@ -32,7 +32,7 @@ export default function Index() {
   const { cfAiStatus, configStatus } = useLoaderData<typeof loader>();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
-      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 ">
+      <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-xl w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center">CF Flux Remix</h1>
         <nav>
           <ul className="space-y-4">
@@ -88,38 +88,38 @@ export default function Index() {
           </ul>
         </nav>
 
-        <div className="border-dashed border-3 border-white-800 mt-8 text-white justify-center text-center">
+        <div className="rounded-full border-dashed border-3 border-white-800 mt-8 text-white justify-center text-center">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="flex justify-center m-0.5">CF-AI状态：
-             <div className={`flex p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+             <div className={`flex p-1 text-center rounded-full border-dashed border-1 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </div>
           </div>
           
           <div className="flex justify-center m-0.5">AI绘画模型：
-             <div className={`flex p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+             <div className={`flex p-1 text-center rounded-full border-dashed border-1 border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </div>
             </div>
           
           <div className="flex justify-center m-0.5">翻译模型：
-            <div className={`flex p-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-blue-500`}>
+            <div className={`flex p-1 text-center rounded-full border-dashed border-1 border-white-500 bg-blue-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </div>
           </div>
           
           <div className="flex justify-center m-0.5">API Key：
-            <div className={`flex p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+            <div className={`flex p-1 text-center rounded-full border-dashed border-1 border-white-800 
                  ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </div>
             </div>
           
           <div className="flex justify-center m-0.5">CF账号：
-            <div className={`flex p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+            <div className={`flex p-1 text-center rounded-full border-dashed border-1 border-white-800 
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </div>
