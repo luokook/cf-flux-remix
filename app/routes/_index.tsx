@@ -73,14 +73,14 @@ export default function Index() {
               </Link>
             </li>
 
-            <li>
+           {/* <li>
               <Link
                 to="/idioms/game"
                 className="block w-full text-center px-6 py-4 text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-green-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400"
               >
                 看图猜成语游戏
               </Link>
-            </li>
+            </li>*/}
 
             
             {/* 可以在这里添加更多的导航项 */}
@@ -92,34 +92,34 @@ export default function Index() {
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="relative m-1">CF-AI状态：
-             <span className={`p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+             <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </span>
           </div>
           
           <div className="relative m-1">AI绘画模型：
-             <span className={`p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+             <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </span>
             </div>
           
           <div className="relative m-1">翻译模型：
-            <span className={`p-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-indigo-500`}>
+            <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-blue-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </span>
           </div>
           
           <div className="relative m-1">API Key：
-            <span className={`p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+            <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </span>
             </div>
           
           <div className="relative m-1">CF账号：
-            <span className={`p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+            <span className={`p-1 m-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </span>
