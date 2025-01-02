@@ -33,7 +33,7 @@ export default function Index() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
       <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-xl w-full">
-        <h1 className="text-4xl font-extrabold text-white mb-8 text-center">AI宇宙</h1>
+        <h1 className="text-4xl font-extrabold text-white mb-8 text-center">AI 宇宙</h1>
         <nav>
           <ul className="space-y-4">
             <li>
@@ -44,30 +44,22 @@ export default function Index() {
                 AI绘画
               </Link>
             </li>
-            
-            <li>
-              <Link
-                to="https://github.com/luokook/cf-flux-remix"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              >
-                访问 Github 项目
-              </Link>
-            </li>
+           
             <li>
               <Link
                 to="/imagetoword"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                图像转文字
+                图像识别(图像转文字)
               </Link>
-            </li>
+             </li>  
             
             <li>
               <Link
                 to="/chat"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                AI聊天对话
+                AI对话
               </Link>
             </li>
             <li>
@@ -83,7 +75,7 @@ export default function Index() {
                 to="/stadiotoword"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                语音转文字
+                语音识别(语音转文字)
               </Link>
             </li>
             <li>
@@ -94,17 +86,7 @@ export default function Index() {
                 AI翻译
               </Link>
             </li>
-            {/* 
-            <li>
-              <Link
-                to="https://github.com/luokook/CFr2-webdav"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              >
-                Workers+R2 搭建个人免费webdav网盘
-              </Link>
-            </li>
-              */}
-            
+    
             <li>
               <Link
                 to="https://github.com/luokook"
@@ -114,7 +96,14 @@ export default function Index() {
               </Link>
             </li>
 
-            
+            <li>
+              <Link
+                to="https://github.com/luokook/cf-flux-remix"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                访问 Github 项目
+              </Link>
+            </li>
             {/* 可以在这里添加更多的导航项 */}
             
           </ul>
