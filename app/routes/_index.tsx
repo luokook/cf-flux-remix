@@ -44,10 +44,10 @@ export default function Index() {
                 AI绘画
               </Link>
             </li>
-           
+  {/*
             <li>
               <Link
-                to="/imagetoword"
+                to="/imagetotext"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 图像识别(图像转文字)
@@ -64,7 +64,7 @@ export default function Index() {
             </li>
             <li>
               <Link
-                to="/wordtostadio"
+                to="/texttostadio"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 文字转语音
@@ -72,7 +72,7 @@ export default function Index() {
             </li>
             <li>
               <Link
-                to="/stadiotoword"
+                to="/stadiototext"
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 语音识别(语音转文字)
@@ -86,7 +86,7 @@ export default function Index() {
                 AI翻译
               </Link>
             </li>
-    
+ */}
             <li>
               <Link
                 to="https://github.com/luokook"
@@ -104,6 +104,8 @@ export default function Index() {
                 访问 Github 项目
               </Link>
             </li>
+
+            
             {/* 可以在这里添加更多的导航项 */}
             
           </ul>
