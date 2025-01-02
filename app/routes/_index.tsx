@@ -91,22 +91,22 @@ export default function Index() {
         <div className="mt-8 text-white text-center border-dashed border-3 border-white-800">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
-          <div className="flex-1 relative m-0.5">CF-AI状态：
-             <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+          <div className="flex relative m-0.5">CF-AI状态：
+             <span className={`flex relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </span>
           </div>
           
-          <div className="flex-1 relative m-0.5">AI绘画模型：
-             <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
+          <div className="flex relative m-0.5">AI绘画模型：
+             <span className={`flex relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </span>
             </div>
           
-          <div className="relative m-0.5">翻译模型：
-            <span className={`relative p-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-blue-500`}>
+          <div className="flex relative m-0.5">翻译模型：
+            <span className={`flex relative p-1 text-center rounded-xl border-dashed border-2 border-white-500 bg-blue-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </span>
           </div>
