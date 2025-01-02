@@ -88,10 +88,10 @@ export default function Index() {
           </ul>
         </nav>
 
-        <div className="mt-8 text-white text-center border-dashed border-3 border-white-800">
+        <div className="mt-8 text-white justify-center text-center border-dashed border-3 border-white-800">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
-          <div className="flex relative m-0.5 justify-center">CF-AI状态：
+          <div className="flex relative m-0.5">CF-AI状态：
              <span className={`flex relative p-1 text-center rounded-xl border-dashed border-2 border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
