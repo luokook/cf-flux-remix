@@ -230,7 +230,7 @@ function getRandomInt(min, max) {
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             />
           </div>
-          <div className="flex-1 flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
+          <div className="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
             <button
               type="button"
               onClick={handleEnhanceToggle}
