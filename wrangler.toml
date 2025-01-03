@@ -25,7 +25,9 @@ API_KEY = "your_api_key_here"
 CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
 CF_TRANSLATE_MODEL_MAP = '''{
     "qwen1.5-14b-chat-awq":"@cf/qwen/qwen1.5-14b-chat-awq", 
-    "meta-m2m100-1.2b":"@cf/meta/m2m100-1.2b" 
+    "qwen1.5-0.5b-chat":"@cf/qwen/qwen1.5-0.5b-chat", 
+    "qwen1.5-7b-chat-awq":"@cf/qwen/qwen1.5-7b-chat-awq", 
+    "qwen1.5-1.8b-chat":"@cf/qwen/qwen1.5-1.8b-chat"
 }'''
 CF_IS_TRANSLATE = "true"
 USE_EXTERNAL_API = "false"
