@@ -69,7 +69,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
 const TranslationAi: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
-  const [prompt, setPrompt] = useState("");
+  const [prompt, setPrompt] = useState("早上好");
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CF_TRANSLATE_MODEL);
   const [lang1, setLang1] = useState("zh");
