@@ -10,7 +10,7 @@ export const loader: LoaderFunction = async ({ context }) => {
   const { config } = appContext;
   
   const modelsobj = { 
-    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
+    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL;
     "qwen1.5-14b-chat-awq11": config.CF_TRANSLATE_MODEL
   };
   const models = Object.entries(modelsobj).map(([id, path]) => ({ id, path }));
@@ -40,7 +40,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   }
   
   const modelsobj = { 
-    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
+    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL;
     "qwen1.5-14b-chat-awq11": config.CF_TRANSLATE_MODEL
   };
   const model = modelsobj[modelId];
