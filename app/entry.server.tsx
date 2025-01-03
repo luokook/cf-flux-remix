@@ -9,7 +9,7 @@ import { RemixServer } from "@remix-run/react";
 import * as isbot from "isbot";
 import { renderToReadableStream } from "react-dom/server";
 // 移除 CONFIG 和 initConfig 的导入
-// import { CONFIG, initConfig } from "./config";
+ import { CONFIG, initConfig } from "./config";
 
 export default async function handleRequest(
   request: Request,
