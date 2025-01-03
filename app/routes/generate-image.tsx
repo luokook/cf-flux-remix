@@ -321,7 +321,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               {promptxmap.map((promptxmap1) => (
-                <option key={promptxmap1.id} value={promptxmap1.id}>
+                <option key={promptxmap1.id} value={promptxmap1.text}>
                   {promptxmap1.text}
                 </option>
               ))}
