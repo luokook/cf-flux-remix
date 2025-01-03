@@ -11,7 +11,7 @@ export const loader: LoaderFunction = async ({ context }) => {
   
   const modelsobj = { 
     "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
-    "qwen1.5-14b-chat-awq11": config.CF_TRANSLATE_MODEL
+    "qwen1.5-14b-chat-awq2": config.CF_TRANSLATE_MODEL
   };
   const models = Object.entries(modelsobj).map(([id, path]) => ({ id, path }));
   
@@ -41,7 +41,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   
   const modelsobj = { 
     "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
-    "qwen1.5-14b-chat-awq11": config.CF_TRANSLATE_MODEL
+    "qwen1.5-14b-chat-awq2": config.CF_TRANSLATE_MODEL
   };
   const model = modelsobj[modelId];
   if (!model) {
@@ -99,13 +99,10 @@ const TranslationAi: FC = () => {
 "金色亡灵节吊坠，复杂的2D矢量几何图形，剪切形状吊坠，蓝图框架线条锐利边缘，svg矢量风格，产品工作室拍摄", 
 "100mm 等距浮岛照片，超现实火山，错综复杂，细节丰富，behance，微观世界平滑，微距锐利聚焦，居中",
 "微小可爱的等距瓷杯咖啡，柔光，色彩柔和，100 毫米镜头，3D Blender 渲染，polycount 趋势，模块化建构主义，蓝色背景，物理渲染，居中",
-"100mm photo of isometric floating island in the sky, surreal volcano, intricate, high detail, behance, microworlds smooth, macro sharp focus, centered",
 "小巧可爱的忍者玩具、站立的角色、柔和平滑的光线、柔和的粉彩、Skottie Young、3D Blender 渲染、多边形、模块化建构主义、流行超现实主义、基于物理的渲染、正方形图像",
 "多层剪影山脉，天空中大火箭的剪影，边缘锐利，日落时分，空气中弥漫着浓雾，矢量风格，地平线剪影 景观壁纸，由 Alena Aenami 制作，看火游戏风格，矢量风格背景",
-"Tiny cute isometric temple, soft smooth lighting, soft colors, soft colors, 100mm lens, 3d blender render, trending on polycount, modular constructivism, blue blackground, physically based rendering, centered",
 "天空中等距浮岛的 100 毫米照片，超现实火山，复杂，高细节，behance，微观世界平滑，微距锐利焦点，居中",
 "头戴花冠的黑人女孩面部特写，光滑柔嫩的皮肤，梦幻般的大眼睛，美丽精致的彩色头发，对称的动漫大眼睛，柔和的光线，细致的面部，由新海诚、stanley artgerm lau、wlop、rossdraws 制作，概念艺术，数字绘画，正对镜头",
-"2d ferocious lion head, vector illustration, angry eyes, football team emblem logo, 2d flat, centered",
 "卡哇伊低多边形熊猫角色，3D 等距渲染，白色背景，环境闭塞，unity 引擎",
  "金色长发的时间女神，身着飘逸的绿松石至蓝色渐变魔法长袍。她五官精致，双手各持一件魔法武器，每件武器上都有一个时钟吊坠。在她身后，代表时间的光环熠熠生辉，周围环绕着象征时间和空间魔法的漩涡能量。这个场景迷人而神秘，捕捉到了时间和空间的本质",
 "3d毛茸茸的美洲驼，可爱的特写，可爱的圆形反光大眼睛，长长的绒毛，皮克斯渲染，虚幻引擎电影流畅，复杂的细节，电影",
@@ -246,6 +243,12 @@ function getRandomInt(min, max) {
           </div>
         </Form>
         
+        
+          <div className="mt-8">
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
+            <div alt="译文" className="w-full rounded-xl shadow-lg" >
+              {`${actionData.translatedPrompt}`}
+            </div>
         
         
         {/* Decorative Elements */}
