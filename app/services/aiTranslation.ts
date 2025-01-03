@@ -6,9 +6,9 @@ export class AiTranslationService {
   constructor(private config: Config) {}
 
   async aiTranslation(prompt: string, lang1: string, lang2: string, model: string ): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
-    
+    let translatedPrompt= "sorry, world!";
     try {
-      const translatedPrompt = await this.translatePrompt(prompt, lang1, lang2, model);
+       translatedPrompt = await this.translatePrompt(prompt, lang1, lang2, model);
     } catch (error) {
       console.error("Error in Translation:", error);
       throw error;
