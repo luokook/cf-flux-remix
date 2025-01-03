@@ -121,20 +121,20 @@ export default function Index() {
         <div className="relative m-1 rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <Link
                 to="https://fluxai.luokook.us.kg/"
-                className="flex text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="flex-1 text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接(另一款)
               </Link>
         <Link
                 to="https://flux.remix.us.kg/"
-                className="flex text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="flex-1 text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接1
               </Link>
             
             <Link
                 to="https://aidraw.foxhank.top/"
-                className="flex text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="flex-1 text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接2
               </Link>
