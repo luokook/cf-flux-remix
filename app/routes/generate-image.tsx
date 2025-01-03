@@ -196,7 +196,7 @@ const postRequest = async function(model, jsonBody){
         console.error(`Cloudflare API request failed: ${response.status}`, errorText);
         throw new AppError(`Cloudflare API request failed: ${response.status} - ${errorText}`, response.status);
       }
-
+      setPrompt("成功了");
       return response;
     } catch (error) {
       console.error("Error in postRequest:", error);
@@ -210,7 +210,7 @@ const postRequest = async function(model, jsonBody){
 const testCfAiConnection = async function(){
     const testModel = config.CF_TRANSLATE_MODEL;
     const testPrompt = "Hello, world!";
-    //await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
+    await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
     return testPrompt;
   }
   
