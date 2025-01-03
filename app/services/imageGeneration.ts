@@ -122,5 +122,6 @@ export class ImageGenerationService {
     const testModel = this.config.CF_TRANSLATE_MODEL;
     const testPrompt = "Hello, world!";
     await this.postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
+    return testPrompt;
   }
 }
