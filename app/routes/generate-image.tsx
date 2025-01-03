@@ -58,6 +58,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 const GenerateImage: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
   const [prompt, setPrompt] = useState("");
+ const [promptmap, setPromptxmap] = useState(""); 
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   const [size, setSize] = useState("1024x1024");
@@ -159,7 +160,8 @@ const GenerateImage: FC = () => {
        "江上孤舟，远处青山，中国水墨画，飞鸟高飞"
      ];
   
-  const promptxmap = Object.entries(promptx).map(([id, text]) => ({ id, text }));
+  const promptxmaps = Object.entries(promptx).map(([id, text]) => ({ id, text }));
+
   /*生成min到max之间的随机整数*/
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -225,6 +227,7 @@ const testCfAiConnection = async function(){
   /*选择一个提示词*/
 const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setPrompt(e.target.value);
+  setPromptxmap(e.target.value);
   };
   
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -320,9 +323,9 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={handlepromptxmapChange}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              {promptxmap.map((promptxmap1) => (
-                <option key={promptxmap1.id} value={promptxmap1.text}>
-                  {promptxmap1.text}
+              {promptxmaps.map((promptxmap) => (
+                <option key={promptxmap.id} value={promptxmap.text}>
+                  {promptxmap.text}
                 </option>
               ))}
             </select>
