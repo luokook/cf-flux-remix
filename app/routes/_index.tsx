@@ -116,19 +116,22 @@ export default function Index() {
             
           </ul>
         </nav>
+        
+        <div className="flex justify-center m-0.5">
         <Link
                 to="https://flux.remix.us.kg/"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接1
               </Link>
             
             <Link
                 to="https://aidraw.foxhank.top/"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="text-center px-5 py-2 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接2
               </Link>
+        </div>  
 
         <div className="rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
