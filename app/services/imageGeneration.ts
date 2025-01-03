@@ -36,10 +36,10 @@ export class ImageGenerationService {
         messages: [
           {
             role: "system",
-            content: `作为 Stable Diffusion Prompt 提示词专家，您将从关键词中创建提示，通常来自 Danbooru 等数据库。
+            content: `作为 Stable Diffusion Prompt 和 Flux Prompt 提示词专家，您将从关键词中创建提示，通常来自 Danbooru 等数据库。
 请遵循以下规则：
 1. 保持原始关键词的顺序。
-2. 将中文关键词翻译成英文。
+2. 将中文关键词翻译成英文，其它语言关键词也翻译成英文。
 3. 添加相关的标签以增强图像质量和细节。
 4. 使用逗号分隔关键词。
 5. 保持简洁，避免重复。
