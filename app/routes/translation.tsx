@@ -69,7 +69,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
 const TranslationAi: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
-  const [prompt, setPrompt] = useState("早上好");
+  const [prompt, setPrompt] = useState("你好！");
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CF_TRANSLATE_MODEL);
   const [lang1, setLang1] = useState("zh");
@@ -244,13 +244,13 @@ function getRandomInt(min, max) {
           </div>
         </Form>
         
-            {`actionData && actionData.model && (
+            {`actionData && actionData.translatedPrompt && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
             <div alt="译文" className="w-full rounded-xl shadow-lg" >
-              ${actionData.model}
+              ${actionData.translatedPrompt}
             </div>
-           )`}
+        )`}
               
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
