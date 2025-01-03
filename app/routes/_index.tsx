@@ -110,6 +110,14 @@ export default function Index() {
               </Link>
             </li>
 
+            <li>
+              <Link
+                to="https://flux.remix.us.kg/"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接
+              </Link>
+            </li>
             
             {/* 可以在这里添加更多的导航项 */}
             
