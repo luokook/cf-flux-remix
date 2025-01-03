@@ -177,8 +177,8 @@ function getRandomInt(min, max) {
 
   /*翻译提示词*/
   const handlepromptfanyi = () => {
-   // const appContext = createAppContext(context);
-   // const { imageGenerationService } = appContext;
+    const appContext = createAppContext(context);
+    const { imageGenerationService } = appContext;
     const prompt1 = document.getElementById("prompt").value;
     
     //setPrompt("");
@@ -246,11 +246,11 @@ function getRandomInt(min, max) {
               required
             ></textarea>
 
-        <div className="relative">
+        <div className="relative justify-center">
             <button
               type="button"
               onClick={handlepromptfanyi}
-              className="px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-500 via-pink-500 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-600 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               翻译提示词
             </button>
