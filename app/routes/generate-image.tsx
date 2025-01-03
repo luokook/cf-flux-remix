@@ -215,7 +215,7 @@ const testCfAiConnection = async function(){
   }
   
   /*翻译提示词*/
-  const handlepromptfanyi = () => {
+  const handlepromptfanyi = async function(){
     const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
      setPrompt(result +"-提示词为："+prompt1);
