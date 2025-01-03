@@ -8,7 +8,7 @@ export class AiTranslationService {
   async aiTranslation(prompt: string, lang1: string, lang2: string, model: string ): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
     
     try {
-      const translatedPrompt = await this.translatePrompt(prompt);
+      const translatedPrompt = await this.translatePrompt(prompt, lang1, lang2, model);
     } catch (error) {
       console.error("Error in Translation:", error);
       throw error;
@@ -18,18 +18,19 @@ export class AiTranslationService {
       prompt,
       translatedPrompt,
       lang1,// 原语言
-      lang2// 目标语言
+      lang2,// 目标语言
+      model
     };
   }
 
   private async translatePrompt(prompt: string, lang1: string, lang2: string, model: string): Promise<string> {
-    if (!this.config.CF_IS_TRANSLATE) {
+    if (!model) {
       console.error("翻译模型未设置");
       return prompt;// 如果失败,返回原始提示词
     }
 
     try {
-      const response = await this.postRequest(this.config.CF_TRANSLATE_MODEL, {
+      const response = await this.postRequest(model, {
         messages: [
           {
             role: "system",
