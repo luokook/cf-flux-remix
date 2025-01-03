@@ -177,7 +177,11 @@ function getRandomInt(min, max) {
 
   /*翻译提示词*/
   const handleResetpromptclearfanyi = () => {
-    setPrompt("");
+    const appContext = createAppContext(context);
+    const { imageGenerationService } = appContext;
+    const text = "你好！";
+    //setPrompt("");
+    setPrompt( "提示词为："+getPrompt(););
    };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -204,24 +208,17 @@ function getRandomInt(min, max) {
           <div className="">
             <label htmlFor="prompt" className="relative block py-2 mb-2 text-white text-lg font-semibold text-shadow">
               提示词(支持中文)：
-              
-              <button
-              type="button"
-              onClick={handleResetpromptclear}
-              className="flex px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-500 via-pink-400 to-red-700 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
-              >
-              清空提示词
-            </button>
-              
+            
               <button
               type="button"
               onClick={handleResetprompt}
-              className="flex px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
               
             </label>
+            
             {/* 提示词框改用文本框，观感好点 */}
             {/*
             <input
@@ -247,8 +244,26 @@ function getRandomInt(min, max) {
               placeholder="请输入您的提示词..."
               required
             ></textarea>
+
+
+            <button
+              type="button"
+              onClick={handleResetpromptfanyi}
+              className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-400 via-pink-600 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              >
+              翻译提示词
+            </button>
+            
+            <button
+              type="button"
+              onClick={handleResetpromptclear}
+              className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              >
+              清空提示词
+            </button>
             
           </div>
+          
           <div>
             <label htmlFor="model" className="block text-white text-lg font-semibold mb-3 text-shadow">
               选择模型 (推荐Flux)：
