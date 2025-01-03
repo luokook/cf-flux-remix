@@ -177,9 +177,9 @@ function getRandomInt(min, max) {
 
   /*翻译提示词*/
   const handlepromptfanyi = () => {
-    const appContext = createAppContext(context);
-    const { imageGenerationService } = appContext;
-    const prompt1 = document.getElementById("prompt").value;
+   // const appContext = createAppContext(context);
+   // const { imageGenerationService } = appContext;
+    var prompt1 = document.getElementById("prompt").value;
     
     //setPrompt("");
     setPrompt( "提示词为："+prompt1);
