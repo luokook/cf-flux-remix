@@ -80,7 +80,8 @@ const GenerateImage: FC = () => {
   };
 
   const promptx = [
-      "猫和老鼠追逐，经典动画情节",
+      "随机一个迪士尼角色，产品工作室拍摄，完美，杰作，3d",
+"猫和老鼠追逐，经典动画情节",
       "(masterpiece:1.2), best quality,PIXIV,cozy animation scenes,scenery, building, sky, (low angle view:1.5)",
       "gold dia de los muertos pendant, intricate 2d vector geometric, cutout shape pendant, blueprint frame lines sharp edges, svg vector style, product studio shoot",
       "浅紫A5封面，白色芙蓉浮雕，上面浮雕标题“艳”，头版右侧白色标签，正面视图，木刻印花风格，白底，彩色铅笔画小笔，极简主义。 --ar 34:47",
@@ -122,7 +123,6 @@ const GenerateImage: FC = () => {
 "天空中等距浮岛的 100 毫米照片，超现实火山，复杂，高细节，behance，微观世界平滑，微距锐利焦点，居中",
 "随机一张名胜古迹图片，真实，高级摄影",
 "龙珠，悟空，完美，杰作，氛围，svg矢量风格，3d风格，随机场景，随机龙珠人物",
-"随机一个迪士尼角色，产品工作室拍摄，完美，杰作，3d",
 "随机一个明星图，真实，不要合成，非AI生成",
 "随机一辆汽车图片",
 "随机一部电影海报",
@@ -137,7 +137,8 @@ const GenerateImage: FC = () => {
    "天空，繁星，宇宙，深邃",
    "随机宇宙图",
     "Tiny cute isometric porcelain cup of coffee, soft smooth lighting, with soft colors, 100mm lens, 3d blender render, trending on polycount, modular constructivism, blue background, physically based rendering, centered",
-    "二维凶猛狮头，矢量插画，愤怒的眼神，足球队徽标志，二维平面，居中"     "在夏日的晚风中，一个可爱的女孩安详地躺在秋天的草坪上，感受着轻柔的风，远处的枫叶飘落",
+    "二维凶猛狮头，矢量插画，愤怒的眼神，足球队徽标志，二维平面，居中",
+    "在夏日的晚风中，一个可爱的女孩安详地躺在秋天的草坪上，感受着轻柔的风，远处的枫叶飘落",
      "漂浮在太空中的狼的全息图，生动的数字插图，dribbble，量子波追踪，黑色背景，behance 高清",
      "Hypnotic illustration of a Halloween pumpkin, hypnotic psychedelic art by Dan Mumford, pop surrealism, dark glow neon paint, mystical, Behance",
       "万圣节南瓜的催眠插图，Dan Mumford 的催眠迷幻艺术，流行超现实主义，深色荧光霓虹灯涂料，神秘，Behance",
@@ -156,7 +157,7 @@ const GenerateImage: FC = () => {
        "地球爆炸，3d风格，世界末日",
        "C4D 3D渲染，Q版卡通风格，全身，拟人化感，一个可爱的美国小男孩，身上穿着红紫色运动衫，里面穿着黑紫色运动裤，和一群外星小怪物玩恐怖游戏，怪物头在空中弹跳，设计特点：Pop Mart盲盒玩具、鲜艳的色彩、明亮的图像、迪士尼皮克斯趋势、电影灯光、精湛的细节、高分辨率、最佳的细节 --ar 9：16",
        "江上孤舟，远处青山，中国水墨画，飞鸟高飞"
-    ];
+     ];
   
   /*生成min到max之间的随机整数*/
 function getRandomInt(min, max) {
