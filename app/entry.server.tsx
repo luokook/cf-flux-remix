@@ -37,7 +37,7 @@ export default async function handleRequest(
     );
   } catch (error) {
     console.error("Failed to render to stream:", error);
-    return new Response("Internal Server Error", { status: 500 });
+    return new Response("Internal Server Error1", { status: 500 });
   }
 
   if (isbot.isbot(request.headers.get("user-agent"))) {
@@ -45,7 +45,7 @@ export default async function handleRequest(
       await body.allReady;
     } catch (error) {
       console.error("Failed to wait for body to be ready:", error);
-      return new Response("Internal Server Error", { status: 500 });
+      return new Response("Internal Server Error2", { status: 500 });
     }
   }
 
