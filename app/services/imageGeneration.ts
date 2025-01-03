@@ -36,7 +36,7 @@ export class ImageGenerationService {
         messages: [
           {
             role: "system",
-            content: `作为 Stable Diffusion Prompt 和 Flux Prompt 提示词专家，您将从关键词中创建提示，通常来自 Danbooru 等数据库。
+            content: `作为 Stable Diffusion Prompt 和 Flux Prompt 提示词专家，您将从关键词中创建提示，通常来自 Danbooru，PIVIX, Gelbooru，gelbooru, sankaku, yandere，Anime Gallery，Konachan 等数据库。
 请遵循以下规则：
 1. 保持原始关键词的顺序。
 2. 将中文关键词翻译成英文，其它语言关键词也翻译成英文。
