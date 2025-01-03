@@ -159,6 +159,7 @@ const GenerateImage: FC = () => {
        "江上孤舟，远处青山，中国水墨画，飞鸟高飞"
      ];
   
+  const promptxmap = Object.entries(promptx).map(([id, text]) => ({ id, text }));
   /*生成min到max之间的随机整数*/
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -221,6 +222,11 @@ const testCfAiConnection = async function(){
      setPrompt(result+"提示词为："+prompt1);
    };
 
+  /*选择一个提示词*/
+const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    setPrompt(e.target.value);
+  };
+  
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPrompt(e.target.value);
   };
@@ -301,6 +307,27 @@ const testCfAiConnection = async function(){
          </div>   
             
           </div>
+
+
+         <div>
+            <label htmlFor="promptxmap" className="block text-white text-lg font-semibold mb-3 text-shadow">
+              选择一个喜欢的提示词：
+            </label>
+            <select
+              id="promptxmap"
+              name="promptxmap"
+              value={promptxmap}
+              onChange={handlepromptxmapChange}
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
+            >
+              {promptxmap.map((promptxmap1) => (
+                <option key={promptxmap1.id} value={promptxmap1.id}>
+                  {promptxmap1.text}
+                </option>
+              ))}
+            </select>
+          </div>
+          
           
           <div>
             <label htmlFor="model" className="block text-white text-lg font-semibold mb-3 text-shadow">
@@ -320,6 +347,7 @@ const testCfAiConnection = async function(){
               ))}
             </select>
           </div>
+          
           <div>
             <label htmlFor="size" className="block text-white text-lg font-semibold mb-3 text-shadow">
               图片尺寸：
