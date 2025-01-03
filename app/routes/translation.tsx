@@ -8,13 +8,7 @@ import { createAppContext } from "../context";
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
   const { config } = appContext;
-  
-  const modelsobj = { 
-    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
-    "qwen1.5-14b-chat-awq2": config.CF_TRANSLATE_MODEL
-  };
-  const models = Object.entries(modelsobj).map(([id, path]) => ({ id, path }));
-  
+  const models = Object.entries(config.CF_TRANSLATE_MODEL_MAP).map(([id, path]) => ({ id, path }));
   return json({ models, config });
   
 };
@@ -39,12 +33,8 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   if (!prompt) {
     return json({ error: "没有句子" }, { status: 400 });
   }
-  
-  const modelsobj = { 
-    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
-    "qwen1.5-14b-chat-awq2": config.CF_TRANSLATE_MODEL
-  };
-  const model = modelsobj[modelId];
+
+ const model = config.CF_TRANSLATE_MODEL_MAP[modelId];
   if (!model) {
     return json({ error: "无效的模型" }, { status: 400 });
   }
