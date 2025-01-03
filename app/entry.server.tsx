@@ -19,9 +19,9 @@ export default async function handleRequest(
   loadContext: any
 ) {
   // 移除这些行
-  // console.log("Initializing config in entry.server.tsx");
-  // initConfig(loadContext.cloudflare.env);
-  // console.log("Config initialized:", JSON.stringify(CONFIG, null, 2));
+   console.log("Initializing config in entry.server.tsx");
+  initConfig(loadContext.cloudflare.env);
+  console.log("Config initialized:", JSON.stringify(CONFIG, null, 2));
 
   let body;
   try {
