@@ -121,22 +121,95 @@ export default function Index() {
         <div className="flex  m-1 rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <Link
                 to="https://fluxai.luokook.us.kg/"
-                className="text-center px-5 py-2 mx-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接(另一款)
               </Link>
         <Link
                 to="https://flux.remix.us.kg/"
-                className="text-center px-5 py-2 mx-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接1
               </Link>
             
             <Link
                 to="https://aidraw.foxhank.top/"
-                className="text-center px-5 py-2 mx-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 友情链接2
+              </Link>
+
+          <Link
+                to="https://ai.jaze.top/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接3
+              </Link>
+            <Link
+                to="https://ai.barku.re/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接4
+              </Link>
+            
+            <Link
+                to="https://hub-chat.nuxt.dev/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接5
+              </Link>
+
+              <Link
+                to=""
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接6
+              </Link>
+            
+            <Link
+                to="https://ai-paint.luis.fun"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接7
+              </Link>
+          <Link
+                to="https://audioflare.seanoliver.dev/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接8
+              </Link>
+            
+            <Link
+                to="https://painter.leafyee.xyz/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接9
+              </Link>
+
+          <Link
+                to="https://ai-draw.mqsi.xyz/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接10
+              </Link>
+
+              <Link
+                to="https://aidraw.mereith.com/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接11
+              </Link>
+          <Link
+                to="https://cf-ai-lora-news-summarizer.streamlit.app/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接12
+              </Link>
+          <Link
+                to="https://qa-pic.lizziepika.workers.dev/"
+                className="text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                友情链接13
               </Link>
         </div>  
 
