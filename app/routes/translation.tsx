@@ -32,6 +32,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   const modelId = formData.get("model") as string;
   const lang1 = formData.get("lang1") as string;
   const lang2 = formData.get("lang2") as string;
+  const translatedPrompt = "langqq";
   
   console.log("Form data:", { prompt, enhance, modelId, lang1, lang2});
 
