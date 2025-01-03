@@ -179,7 +179,7 @@ function getRandomInt(min, max) {
   const handlepromptfanyi = () => {
    // const appContext = createAppContext(context);
    // const { imageGenerationService } = appContext;
-    var prompt1 = document.getElementById("prompt").value;
+    const prompt1 = document.getElementById("prompt").value;
     
     //setPrompt("");
     setPrompt( "提示词为："+prompt1);
@@ -246,11 +246,11 @@ function getRandomInt(min, max) {
               required
             ></textarea>
 
-
+        <div className="relative">
             <button
               type="button"
               onClick={handlepromptfanyi}
-              className="flex px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-400 via-pink-600 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-500 via-pink-500 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               翻译提示词
             </button>
@@ -258,10 +258,11 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleResetpromptclear}
-              className="flex px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               清空提示词
             </button>
+         </div>   
             
           </div>
           
