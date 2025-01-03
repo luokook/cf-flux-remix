@@ -8,8 +8,10 @@ import { createAppContext } from "../context";
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
   const { config } = appContext;
-  //const models = Object.entries(config.CUSTOMER_MODEL_MAP).map(([id, path]) => ({ id, path }));
-  const models = config.CF_TRANSLATE_MODEL;
+  
+  const modelsobj = { "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,};
+  const models = Object.entries(modelsobj).map(([id, path]) => ({ id, path }));
+  
   return json({ models, config });
   
 };
@@ -33,9 +35,9 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   if (!prompt) {
     return json({ error: "没有句子" }, { status: 400 });
   }
-
- //const model = config.CUSTOMER_MODEL_MAP[modelId];
-  const model = modelId;
+  
+  const modelsobj = { "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,};
+  const model = modelsobj[modelId];
   if (!model) {
     return json({ error: "无效的模型" }, { status: 400 });
   }
@@ -184,15 +186,16 @@ function getRandomInt(min, max) {
               ))}
             </select>
           </div>
+
           <div>
             <label htmlFor="size" className="block text-white text-lg font-semibold mb-3 text-shadow">
               原始语言：
             </label>
             <select
-              id="size"
-              name="size"
-              value={size}
-              onChange={(e) => setSize(e.target.value)}
+              id="lang1"
+              name="lang1"
+              value={lang1}
+              onChange={(e) => setLang1(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               <option value="zh">中文</option>
@@ -207,7 +210,7 @@ function getRandomInt(min, max) {
               id="lang2"
               name="lang2"
               value={lang2}
-              onChange={(e) => setSize(e.target.value)}
+              onChange={(e) => setLang2(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
               <option value="en">英文</option>
