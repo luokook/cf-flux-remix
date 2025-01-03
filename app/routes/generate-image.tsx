@@ -165,11 +165,15 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min; 
   }
+  /*随机一个提示词*/
   const handleResetprompt = () => {
-    
     setPrompt(promptx[getRandomInt(0, promptx.length-1)]);
-    
-  };
+   };
+
+  /*清空提示词*/
+  const handleResetpromptclear = () => {
+    setPrompt("");
+   };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPrompt(e.target.value);
@@ -195,6 +199,15 @@ function getRandomInt(min, max) {
           <div className="">
             <label htmlFor="prompt" className="relative block py-2 mb-2 text-white text-lg font-semibold text-shadow">
               提示词(支持中文)：
+              
+              <button
+              type="button"
+              onClick={handleResetpromptclear}
+              className="absolute right-8 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-450 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              >
+              清空提示词
+            </button>
+              
               <button
               type="button"
               onClick={handleResetprompt}
@@ -202,6 +215,7 @@ function getRandomInt(min, max) {
               >
               随机一个提示词
             </button>
+              
             </label>
             {/* 提示词框改用文本框，观感好点 */}
             {/*
@@ -308,10 +322,10 @@ function getRandomInt(min, max) {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-yellow-500 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-red-400 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
-              重置输入
+              重置选项
             </button>
           </div>
         </Form>
