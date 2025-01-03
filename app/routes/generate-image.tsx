@@ -176,12 +176,13 @@ function getRandomInt(min, max) {
    };
 
   /*翻译提示词*/
-  const handleResetpromptclearfanyi = () => {
+  const handlepromptfanyi = () => {
     const appContext = createAppContext(context);
     const { imageGenerationService } = appContext;
-    const text = "你好！";
+    const prompt=document.getElementById("prompt").value;
+    
     //setPrompt("");
-    setPrompt( "提示词为："+getPrompt(););
+    setPrompt( "提示词为："+prompt);
    };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -248,7 +249,7 @@ function getRandomInt(min, max) {
 
             <button
               type="button"
-              onClick={handleResetpromptfanyi}
+              onClick={handlepromptfanyi}
               className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-400 via-pink-600 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               翻译提示词
