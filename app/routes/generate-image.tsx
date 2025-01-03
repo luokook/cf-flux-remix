@@ -210,15 +210,15 @@ const postRequest = async function(model, jsonBody){
 const testCfAiConnection = async function(){
     const testModel = config.CF_TRANSLATE_MODEL;
     const testPrompt = "Hello, world!";
-    await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
+    //await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
     return testPrompt;
   }
   
   /*翻译提示词*/
   const handlepromptfanyi = async function(){
-    //const result = await testCfAiConnection();
+    const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
-     setPrompt("提示词为："+prompt1);
+     setPrompt(result+"提示词为："+prompt1);
    };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
