@@ -58,7 +58,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 const GenerateImage: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
   const [prompt, setPrompt] = useState("");
- const [promptmap, setPromptxmap] = useState(""); 
+ const [promptxmap, setPromptxmap] = useState(""); 
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   const [size, setSize] = useState("1024x1024");
