@@ -176,7 +176,7 @@ function getRandomInt(min, max) {
    };
 
 
-async postRequest(model: string, jsonBody: any){
+async postRequest = (model, jsonBody) => {
     const account = config.CF_ACCOUNT_LIST[Math.floor(Math.random() * config.CF_ACCOUNT_LIST.length)];
     const url = `https://api.cloudflare.com/client/v4/accounts/${account.account_id}/ai/run/${model}`;
     const headers = {
@@ -207,7 +207,7 @@ async postRequest(model: string, jsonBody: any){
     }
   }
 
-async testCfAiConnection(){
+async testCfAiConnection = () =>{
     const testModel = config.CF_TRANSLATE_MODEL;
     const testPrompt = "Hello, world!";
     await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
