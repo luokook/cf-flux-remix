@@ -243,17 +243,8 @@ const testCfAiConnection = async function(){
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
-            <label htmlFor="prompt" className="relative block py-2 mb-2 text-white text-lg font-semibold text-shadow">
+            <label htmlFor="prompt" className="block py-2 mb-2 text-white text-lg font-semibold text-shadow">
               提示词(支持中文)：
-            
-              <button
-              type="button"
-              onClick={handleResetprompt}
-              className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
-              >
-              随机一个提示词
-            </button>
-              
             </label>
             
             {/* 提示词框改用文本框，观感好点 */}
@@ -283,20 +274,29 @@ const testCfAiConnection = async function(){
             ></textarea>
 
         <div className="relative justify-center">
-            <button
+
+          <button
               type="button"
-              onClick={handlepromptfanyi}
-              className="px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-600 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              onClick={handleResetprompt}
+              className="absolute right-4 px-4 py-2 mx-2 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
-              翻译提示词
+              随机一个提示词
             </button>
-            
+          
             <button
               type="button"
               onClick={handleResetpromptclear}
-              className="px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="px-4 py-2 mx-2 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               清空提示词
+            </button>
+          
+          <button
+              type="button"
+              onClick={handlepromptfanyi}
+              className="px-4 py-2 mx-2 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-600 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              >
+              翻译提示词
             </button>
          </div>   
             
