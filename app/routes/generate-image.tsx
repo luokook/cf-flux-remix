@@ -7,9 +7,9 @@ import { createAppContext } from "../context";
 
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
-  const { config } = appContext;
+  const { imageGenerationService, config } = appContext;
   const models = Object.entries(config.CUSTOMER_MODEL_MAP).map(([id, path]) => ({ id, path }));
-  return json({ models, config });
+  return json({ imageGenerationService, models, config });
 };
 
 export const action: ActionFunction = async ({ request, context }: { request: Request; context: any }) => {
@@ -56,7 +56,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 };
 
 const GenerateImage: FC = () => {
-  const { models, config } = useLoaderData<typeof loader>();
+  const { imageGenerationService, models, config } = useLoaderData<typeof loader>();
   const [prompt, setPrompt] = useState("");
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
@@ -177,12 +177,11 @@ function getRandomInt(min, max) {
 
   /*翻译提示词*/
   const handlepromptfanyi = () => {
-    const appContext = createAppContext(context);
-    const { imageGenerationService } = appContext;
+    const result = await imageGenerationService.testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
     
     //setPrompt("");
-    setPrompt( "提示词为："+prompt1);
+    setPrompt(result +"-提示词为："+prompt1);
    };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
