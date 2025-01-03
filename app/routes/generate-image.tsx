@@ -7,9 +7,9 @@ import { createAppContext } from "../context";
 
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
-  const { imageGenerationService, config } = appContext;
+  const { config } = appContext;
   const models = Object.entries(config.CUSTOMER_MODEL_MAP).map(([id, path]) => ({ id, path }));
-  return json({ imageGenerationService, models, config });
+  return json({ models, config });
 };
 
 export const action: ActionFunction = async ({ request, context }: { request: Request; context: any }) => {
@@ -56,7 +56,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 };
 
 const GenerateImage: FC = () => {
-  const { imageGenerationService, models, config } = useLoaderData<typeof loader>();
+  const { models, config } = useLoaderData<typeof loader>();
   const [prompt, setPrompt] = useState("");
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
@@ -175,13 +175,50 @@ function getRandomInt(min, max) {
     setPrompt("");
    };
 
+
+async postRequest(model: string, jsonBody: any): Promise<Response> {
+    const account = config.CF_ACCOUNT_LIST[Math.floor(Math.random() * config.CF_ACCOUNT_LIST.length)];
+    const url = `https://api.cloudflare.com/client/v4/accounts/${account.account_id}/ai/run/${model}`;
+    const headers = {
+      'Authorization': `Bearer ${account.token}`,
+      'Content-Type': 'application/json',
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(jsonBody),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`Cloudflare API request failed: ${response.status}`, errorText);
+        throw new AppError(`Cloudflare API request failed: ${response.status} - ${errorText}`, response.status);
+      }
+
+      return response;
+    } catch (error) {
+      console.error("Error in postRequest:", error);
+      if (error instanceof AppError) {
+        throw error;
+      }
+      throw new AppError('Failed to connect to Cloudflare API', 500);
+    }
+  }
+
+async testCfAiConnection(): Promise<void> {
+    const testModel = config.CF_TRANSLATE_MODEL;
+    const testPrompt = "Hello, world!";
+    await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
+    return testPrompt;
+  }
+  
   /*翻译提示词*/
   const handlepromptfanyi = () => {
-    const result = await imageGenerationService.testCfAiConnection();
+    const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
-    
-    //setPrompt("");
-    setPrompt(result +"-提示词为："+prompt1);
+     setPrompt(result +"-提示词为："+prompt1);
    };
 
   const handlePromptChange = (e: ChangeEvent<HTMLInputElement>) => {
