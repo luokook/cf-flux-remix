@@ -22,7 +22,11 @@ CF_ACCOUNT_LIST = '''[{
     "token":"4MPnwTI_BLshvm1QH2PecGDWtP6V-XgELnjkqk8b"
 }]'''
 API_KEY = "your_api_key_here"
-CF_TRANSLATE_MODEL = "@cf/meta/m2m100-1.2b"
+CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
+CF_TRANSLATE_MODEL_MAP = '''{
+    "qwen1.5-14b-chat-awq":"@cf/qwen/qwen1.5-14b-chat-awq", 
+    "meta-m2m100-1.2b":"@cf/meta/m2m100-1.2b" 
+}'''
 CF_IS_TRANSLATE = "true"
 USE_EXTERNAL_API = "false"
 EXTERNAL_API = ""
