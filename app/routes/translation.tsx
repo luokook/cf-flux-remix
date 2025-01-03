@@ -10,7 +10,7 @@ export const loader: LoaderFunction = async ({ context }) => {
   const { config } = appContext;
   
   const modelsobj = { 
-    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL;
+    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
     "qwen1.5-14b-chat-awq11": config.CF_TRANSLATE_MODEL
   };
   const models = Object.entries(modelsobj).map(([id, path]) => ({ id, path }));
@@ -40,7 +40,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   }
   
   const modelsobj = { 
-    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL;
+    "qwen1.5-14b-chat-awq": config.CF_TRANSLATE_MODEL,
     "qwen1.5-14b-chat-awq11": config.CF_TRANSLATE_MODEL
   };
   const model = modelsobj[modelId];
@@ -250,7 +250,7 @@ function getRandomInt(min, max) {
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
             <div alt="译文" className="w-full rounded-xl shadow-lg" >
-              {`译文大意：${actionData.translatedPrompt}`}
+              {`${actionData.translatedPrompt}`}
             </div>
         )}
         
