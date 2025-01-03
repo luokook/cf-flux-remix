@@ -78,7 +78,7 @@ const GenerateImage: FC = () => {
     setModel(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
     setSize("1024x1024");
     setNumSteps(config.FLUX_NUM_STEPS);
-    setPromptxmap("");
+    setPromptxmap("哈哈哈");
   };
 
   const promptx = [
