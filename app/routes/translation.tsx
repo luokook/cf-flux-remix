@@ -229,17 +229,11 @@ function getRandomInt(min, max) {
           
         </Form>
         
-           <textarea
-              type="text"
-              id="prompt2"
-              name="prompt2"
-              value={prompt2}
-              
-              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-2xl placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
-              rows="5"
-              placeholder="等待翻译结果..."
-              
-             ></textarea>  
+           <div id="text" 
+             className="w-full px-5 py-3 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white" 
+            >
+             等待翻译结果...
+           </div>  
         
         
         
