@@ -39,7 +39,7 @@ export default function Index() {
             <li>
               <Link
                 to="/generate-image"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-black-400 via-indigo-500 to-black-400 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 AI绘画
               </Link>
@@ -232,7 +232,7 @@ export default function Index() {
             </div>
           
           <div className="flex justify-center m-0.5">翻译模型：
-            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-blue-500`}>
+            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-blue-600`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </div>
           </div>
