@@ -33,11 +33,7 @@ export default function Index() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-700 via-green-500 to-blue-700">
       <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-xl w-full">
-        <h1 className="text-4xl font-extrabold text-white mb-8 text-center">AI 
-          <a class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 p-1.5 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center" 
-                 href="https://github.com/luokook/cf-flux-remix" rel="noopener noreferrer" target="_blank"><span class="iconify i-simple-icons:github flex-shrink-0 h-5 w-5" aria-hidden="true" style=""></span>
-                 </a>
-          宇宙</h1>
+        <h1 className="text-4xl font-extrabold text-white mb-8 text-center">AI 宇宙</h1>
         <nav>
           <ul className="space-y-4">
             <li>
