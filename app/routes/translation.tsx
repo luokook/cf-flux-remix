@@ -237,9 +237,9 @@ function getRandomInt(min, max) {
             <div alt="译文" className="w-full rounded-xl shadow-lg" >
               ${actionData.translatedPrompt}
             </div>
+        )`}
         
-        
-         */}
+         
         
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
