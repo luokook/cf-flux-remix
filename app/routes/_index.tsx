@@ -232,7 +232,7 @@ export default function Index() {
             </div>
           
           <div className="flex justify-center m-0.5">翻译模型：
-            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-blue-600`}>
+            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-indigo-500`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function Index() {
           
           <div className="flex justify-center m-0.5">CF账号：
             <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-800 
-                 ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
+                 ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-600" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </div>
             </div>
