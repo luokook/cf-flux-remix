@@ -6,7 +6,7 @@ export class AiTranslationService {
   constructor(private config: Config) {}
 
   async aiTranslation(prompt: string, lang1: string, lang2: string, model: string ): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
-    let translatedPrompt= "";
+    const translatedPrompt= "";
     //prompt = prompt ? prompt :"你好!";
     //model = model ? model :this.config.CF_IS_TRANSLATE;
    // lang1 = lang1 ? lang1 :"zh";
@@ -21,10 +21,8 @@ export class AiTranslationService {
      console.log("Translated prompt:", translatedPrompt);
     return {
       prompt,
-      translatedPrompt:translatedPrompt,
-      lang1,// 原语言
-      lang2,// 目标语言
-      model
+      translatedPrompt:translatedPrompt
+      
     };
   }
 
