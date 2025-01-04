@@ -391,7 +391,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-dashed border-[3px] border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-dashed border-[5px] border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-800" : "bg-gradient-to-r from-gray-400 to-gray-800"}`}
               disabled={isSubmitting}
             >
@@ -413,7 +413,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-red-450 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-[5px] border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-red-450 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置选项
