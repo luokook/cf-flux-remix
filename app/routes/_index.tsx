@@ -31,7 +31,7 @@ export const loader: LoaderFunction = async ({ context }: { context: AppLoadCont
 export default function Index() {
   const { cfAiStatus, configStatus } = useLoaderData<typeof loader>();
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 via-green-500 to-blue-800">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-700 via-green-500 to-blue-700">
       <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-xl w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center">AI 宇宙</h1>
         <nav>
