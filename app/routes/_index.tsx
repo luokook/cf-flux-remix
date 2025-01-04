@@ -164,7 +164,7 @@ export default function Index() {
                 to=""
                 className="flex-auto text-center px-5 py-2 mx-1.5 my-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                ~~
+                ~~~~~
               </Link>
             
             <Link
@@ -232,7 +232,7 @@ export default function Index() {
             </div>
           
           <div className="flex justify-center m-0.5">翻译模型：
-            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-indigo-500`}>
+            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-gradient-to-r from-indigo-500 to-indigo-700`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </div>
           </div>
