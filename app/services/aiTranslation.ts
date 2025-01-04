@@ -6,7 +6,7 @@ export class AiTranslationService {
   constructor(private config: Config) {}
 
   async aiTranslation(prompt: string, lang1: string, lang2: string, model: string ): Promise<{ prompt: string, translatedPrompt: string, lang1: string, lang2: string }> {
-    let translatedPrompt= "sorry, world!";
+    let translatedPrompt= "";
     //prompt = prompt ? prompt :"你好!";
     //model = model ? model :this.config.CF_IS_TRANSLATE;
    // lang1 = lang1 ? lang1 :"zh";
@@ -14,14 +14,10 @@ export class AiTranslationService {
     
     const isModel = model === this.config.CF_TRANSLATE_MODEL_MAP["qwen1.5-14b-chat-awq"];
     
-    try {
       translatedPrompt = isModel ? 
         await this.translatePrompt(prompt, lang1, lang2, model) :
         await this.translatePrompt(prompt, lang1, lang2, model);
-      } catch (error) {
-      console.error("Error in Translation:", error);
-      throw error;
-    }
+      
      console.log("Translated prompt:", translatedPrompt);
     return {
       prompt,
