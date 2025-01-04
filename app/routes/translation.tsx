@@ -223,21 +223,13 @@ function getRandomInt(min, max) {
           </div>
           
         </Form>
-        {/*
-           <div id="text" 
-             className="w-full px-5 py-3 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white" 
-            >
-             等待翻译结果...
-           </div>  
-        )`}
         
             {`actionData && actionData.translatedPrompt && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
             <div alt="译文" className="w-full rounded-xl shadow-lg" >
               ${actionData.translatedPrompt}
-            </div>
-        )`}
+            </div>)`}
         
          
         
