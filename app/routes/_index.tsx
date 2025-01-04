@@ -118,7 +118,7 @@ export default function Index() {
           </ul>
         </nav>
         
-        <div className="relative m-1 p-2 rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
+        <div className="relative flex flex-wrap m-1 p-2 rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <Link
                 to="https://fluxai.luokook.us.kg/"
                 className="flex text-center px-5 py-2 mx-1 my-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
