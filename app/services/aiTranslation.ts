@@ -7,11 +7,6 @@ export class AiTranslationService {
 
   async aiTranslation(prompt: string, lang1: string, lang2: string, model: string ): Promise<{ prompt: string, translatedPrompt: string }> {
     let translatedPrompt1;
-    //prompt = prompt ? prompt :"你好!";
-    //model = model ? model :this.config.CF_IS_TRANSLATE;
-   // lang1 = lang1 ? lang1 :"zh";
-   // lang2 = lang2 ? lang2 :"en";
-    
     const isModel = model === this.config.CF_TRANSLATE_MODEL_MAP["qwen1.5-14b-chat-awq"];
     
       translatedPrompt1 = isModel ? 
