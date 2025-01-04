@@ -140,13 +140,7 @@ function getRandomInt(min, max) {
           <div className="">
             <label htmlFor="prompt" className="relative block py-2 mb-2 text-white text-lg font-semibold text-shadow">
               原始句子(中文)：
-              <button
-                type="button"
-                onClick={handleResetprompt}
-                className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
-                >
-                随机句子
-              </button>
+              
             </label>
             <textarea
               type="text"
@@ -159,6 +153,13 @@ function getRandomInt(min, max) {
               placeholder="请输入您的句子..."
               required
              ></textarea>  
+            <button
+                type="button"
+                onClick={handleResetprompt}
+                className="absolute right-4 px-4 py-2 mx-1 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+                >
+                随机句子
+              </button>
           </div>
 
 
@@ -232,8 +233,22 @@ function getRandomInt(min, max) {
               重置输入
             </button>
           </div>
+          
         </Form>
         
+           <textarea
+              type="text"
+              id="prompt2"
+              name="prompt2"
+              value={prompt2}
+              
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-pretty font-bold text-white text-2xl placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
+              rows="5"
+              placeholder="等待翻译结果..."
+              
+             ></textarea>  
+        
+        {/*
             {`actionData && actionData.translatedPrompt && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
@@ -241,7 +256,9 @@ function getRandomInt(min, max) {
               ${actionData.translatedPrompt}
             </div>
         )`}
-              
+        
+         */}
+        
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
         <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-4000 -z-10"></div>
