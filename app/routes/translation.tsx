@@ -228,7 +228,7 @@ function getRandomInt(min, max) {
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
             <div alt="译文" className="w-full rounded-xl shadow-lg" >
-              ${actionData.translatedPrompt}
+              哈哈哈
             </div>
         )`}
          
