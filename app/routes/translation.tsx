@@ -225,7 +225,11 @@ function getRandomInt(min, max) {
         </Form>
         
             
-         
+             <div id="text" 
+             className="w-full px-5 py-3 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white" 
+            >
+             等待翻译结果...
+           </div>  
         
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
