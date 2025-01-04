@@ -22,13 +22,12 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
   const formData = await request.formData();
   const prompt = formData.get("prompt") as string;
-  const enhance = formData.get("enhance") === "true";
   const modelId = formData.get("model") as string;
   const lang1 = formData.get("lang1") as string;
   const lang2 = formData.get("lang2") as string;
   
   
-  console.log("Form data:", { prompt, enhance, modelId, lang1, lang2});
+  console.log("Form data:", { prompt, modelId, lang1, lang2});
 
   if (!prompt) {
     return json({ error: "没有句子" }, { status: 400 });
@@ -41,7 +40,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
   try {
     const result = await aiTranslationService.aiTranslation(
-      enhance ? `---tl ${prompt}` : prompt,
+      prompt,
       lang1,
       lang2,
       model
@@ -59,8 +58,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 
 const TranslationAi: FC = () => {
   const { models, config } = useLoaderData<typeof loader>();
-  const [prompt, setPrompt] = useState("你好！");
-  const [enhance, setEnhance] = useState(false);
+  const [prompt, setPrompt] = useState("");
   const [model, setModel] = useState(config.CF_TRANSLATE_MODEL);
   const [lang1, setLang1] = useState("zh");
   const [lang2, setLang2] = useState("en");
@@ -69,10 +67,6 @@ const TranslationAi: FC = () => {
   const navigation = useNavigation();
 
   const isSubmitting = navigation.state === "submitting";
-
-  const handleEnhanceToggle = () => {
-    setEnhance(!enhance);
-  };
 
   const handleReset = () => {
     setPrompt("");
@@ -229,14 +223,23 @@ function getRandomInt(min, max) {
           </div>
           
         </Form>
-        
+        {/*
            <div id="text" 
              className="w-full px-5 py-3 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white" 
             >
              等待翻译结果...
            </div>  
+        )`}
+        
+            {`actionData && actionData.translatedPrompt && (
+          <div className="mt-8">
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
+            <div alt="译文" className="w-full rounded-xl shadow-lg" >
+              ${actionData.translatedPrompt}
+            </div>
         
         
+         */}
         
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
