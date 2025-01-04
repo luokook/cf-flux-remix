@@ -218,34 +218,34 @@ export default function Index() {
           <h2 className="text-2xl font-bold mt-2 mb-3">系统状态</h2>
           
           <div className="flex justify-center m-0.5">CF-AI状态：
-             <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-800 
+             <div className={`flex p-1 text-center rounded-full border-dashed border-[3px] border-white-800 
                  ${cfAiStatus === "已连接" ? "bg-green-700" : "bg-red-500"}`}>
                    {cfAiStatus}
               </div>
           </div>
           
           <div className="flex justify-center m-0.5">AI绘画模型：
-             <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-800 
+             <div className={`flex p-1 text-center rounded-full border-dashed border-[3px] border-white-800 
                  ${configStatus.CUSTOMER_MODEL_MAP === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
                {configStatus.CUSTOMER_MODEL_MAP}
              </div>
             </div>
           
           <div className="flex justify-center m-0.5">翻译模型：
-            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-500 bg-gradient-to-r from-indigo-500 to-indigo-700`}>
+            <div className={`flex p-1 text-center rounded-full border-dashed border-[3px] border-white-500 bg-gradient-to-r from-black-500 to-black-700`}>
               {configStatus.CF_TRANSLATE_MODEL}
             </div>
           </div>
           
           <div className="flex justify-center m-0.5">API Key：
-            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-800 
+            <div className={`flex p-1 text-center rounded-full border-dashed border-[3px] border-white-800 
                  ${configStatus.API_KEY === "已设置" ? "bg-green-700" : "bg-red-500"}`}>
               {configStatus.API_KEY}
             </div>
             </div>
           
           <div className="flex justify-center m-0.5">CF账号：
-            <div className={`flex p-1 text-center rounded-full border-dashed border-2 border-white-800 
+            <div className={`flex p-1 text-center rounded-full border-dashed border-[3px] border-white-800 
                  ${configStatus.CF_ACCOUNT_LIST === "已设置" ? "bg-green-600" : "bg-red-500"}`}>
               {configStatus.CF_ACCOUNT_LIST}
             </div>
