@@ -229,7 +229,7 @@ const testCfAiConnection = async function(){
   const handlepromptfanyi = async function(){
     //const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
-     setPrompt(<div className='bg-red'>抱歉，该功能暂时未上线……</div>);
+     setPrompt({`<div className='bg-red'>抱歉，该功能暂时未上线……</div>`});
    };
 
   /*选择一个提示词*/
