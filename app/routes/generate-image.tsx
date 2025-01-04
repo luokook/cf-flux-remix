@@ -278,7 +278,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full h-[200px] text-2xl text-pretty px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20  font-bold text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
+              className="w-full h-[100px] text-2xl text-pretty px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20  font-bold text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
               rows="5"
               placeholder="受不了了！来一个富有创意的提示词吧..."
               required
@@ -297,7 +297,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <button
               type="button"
               onClick={handleResetpromptclear}
-              className="absolute right-4 px-4 py-2 mx-2 my-3 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="absolute right-4 px-4 py-2 mx-2 my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               清空提示词
             </button>
@@ -305,7 +305,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           <button
               type="button"
               onClick={handlepromptfanyi}
-              className="px-4 py-2 mx-2  my-3 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-500 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="px-4 py-2 mx-2  my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-500 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               翻译提示词
             </button>
@@ -391,7 +391,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <button
               type="button"
               onClick={handleEnhanceToggle}
-              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-dashed border-2 border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
+              className={`flex-1 px-5 py-3 mx-2 shadow-xl border-dashed border-[3px] border-white-800 rounded-xl text-lg font-semibold text-white transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400
                           ${enhance ? "bg-gradient-to-r from-green-400 to-green-800" : "bg-gradient-to-r from-gray-400 to-gray-800"}`}
               disabled={isSubmitting}
             >
@@ -413,7 +413,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <button
               type="button"
               onClick={handleReset}
-              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-2 border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-red-450 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
+              className="flex-1 px-5 py-3 mx-2 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white bg-gradient-to-r from-red-450 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl"
               disabled={isSubmitting}
             >
               重置选项
