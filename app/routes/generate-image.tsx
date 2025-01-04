@@ -278,7 +278,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               name="prompt"
               value={prompt}
               onChange={handlePromptChange}
-              className="w-full h-[150px] text-2xl text-pretty px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20  font-bold text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
+              className="w-full h-[200px] text-2xl text-pretty px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20  font-bold text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
               rows="5"
               placeholder="受不了了！来一个富有创意的提示词吧..."
               required
@@ -289,7 +289,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           <button
               type="button"
               onClick={handleResetprompt}
-              className="px-4 py-2 mx-2 my-3 border-dashed  border-2 border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
+              className="px-4 py-2 mx-2 my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-yellow-450 via-yellow-600 to-yellow-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
               随机一个提示词
             </button>
