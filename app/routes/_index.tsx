@@ -39,7 +39,7 @@ export default function Index() {
             <li>
               <Link
                 to="/generate-image"
-                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-black-500 via-indigo-500 to-black-500 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-black-500 via-black-500 to-black-500 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 AI绘画
               </Link>
