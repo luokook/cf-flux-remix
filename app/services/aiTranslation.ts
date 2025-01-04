@@ -21,7 +21,7 @@ export class AiTranslationService {
      console.log("Translated prompt:", translatedPrompt);
     return {
       prompt,
-      translatedPrompt:translatedPrompt
+      "translatedPrompt":translatedPrompt
       
     };
   }
