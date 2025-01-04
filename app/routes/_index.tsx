@@ -144,13 +144,13 @@ export default function Index() {
                 to="https://ai.jaze.top/"
                 className="flex-auto text-center px-5 py-2 mx-1.5 my-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                jaze
+                jaze⭐
               </Link>
             <Link
                 to="https://ai.barku.re/"
                 className="flex-auto text-center px-5 py-2 mx-1.5 my-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                barku
+                barku⭐
               </Link>
             
             <Link
