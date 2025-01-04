@@ -108,7 +108,9 @@ export default function Index() {
                 className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
                 访问 Github 项目
-               
+               <a class="focus:outline-none focus-visible:outline-0 disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:cursor-not-allowed aria-disabled:opacity-75 flex-shrink-0 font-medium rounded-md text-sm gap-x-1.5 p-1.5 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 inline-flex items-center" 
+                 href="https://github.com/luokook/cf-flux-remix" rel="noopener noreferrer" target="_blank"><span class="iconify i-simple-icons:github flex-shrink-0 h-5 w-5" aria-hidden="true" style=""></span>
+                 </a>
                  </Link>
             </li>
 
