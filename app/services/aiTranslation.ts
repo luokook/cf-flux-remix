@@ -21,7 +21,7 @@ export class AiTranslationService {
      console.log("Translated prompt:", translatedPrompt);
     return {
       prompt,
-      translatedPrompt,
+      translatedPrompt:translatedPrompt,
       lang1,// 原语言
       lang2,// 目标语言
       model
