@@ -21,7 +21,7 @@ CF_ACCOUNT_LIST = '''[{
     "account_id":"0bf323aa812939e3e37caee2aadfc2b0",
     "token":"4MPnwTI_BLshvm1QH2PecGDWtP6V-XgELnjkqk8b"
 }]'''
-API_KEY = "your_api_key_here"
+API_KEY = "luo123450"
 CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
 CF_TRANSLATE_MODEL_MAP = '''{
     "qwen1.5-14b-chat-awq":"@cf/qwen/qwen1.5-14b-chat-awq", 
@@ -30,7 +30,7 @@ CF_TRANSLATE_MODEL_MAP = '''{
     "qwen1.5-1.8b-chat":"@cf/qwen/qwen1.5-1.8b-chat"
 }'''
 CF_IS_TRANSLATE = "true"
-USE_EXTERNAL_API = "false"
+USE_EXTERNAL_API = "ture"
 EXTERNAL_API = ""
 EXTERNAL_MODEL = ""
 EXTERNAL_API_KEY = ""
