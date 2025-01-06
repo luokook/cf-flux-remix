@@ -83,6 +83,8 @@ const GenerateImage: FC = () => {
   };
 
   const promptx = [
+    "1024x1024 undefined",
+    "free 唯美",
     "毛茸茸 怪物，幼崽，4 爪，可爱，（雪+雪），超高分辨率，完美，杰作，氛围",
      "随机一个迪士尼角色，产品工作室拍摄，完美，杰作，3d",
       "猫和老鼠追逐，经典动画情节，3d渲染，电影特效",
@@ -231,7 +233,7 @@ const testCfAiConnection = async function(){
     //const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
     setPrompt("抱歉，该功能暂时未上线……");
-    setPrompt(size+actionData);
+    setPrompt(size+actionData.translatedPrompt);
      
    };
 
