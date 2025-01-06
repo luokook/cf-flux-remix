@@ -430,6 +430,11 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
         
         {actionData && actionData.image && (
           <div className="mt-8">
+          <h2 className="text-2xl font-bold text-white mb-4 text-shadow">有关生成参数：</h2>
+              <div className="mt-1 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
+                 绘画模型：{model}
+              </div>
+            
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">AI优化和翻译后的提示词：</h2>
               <div className="mt-1 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
                  {`${actionData.translatedPrompt}`}
