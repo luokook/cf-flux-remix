@@ -241,8 +241,8 @@ const testCfAiConnection = async function(){
     //alert("抱歉，该功能暂时未上线！");
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
-    actionData.translatedPrompt = "哈哈哈";
-    size = "哈哈哈";
+    //actionData.translatedPrompt = "哈哈哈";
+    size = 10;
      
    };
 
