@@ -32,7 +32,7 @@ export class ImageGenerationService {
     }
    let syscontent;
     let usercontent;
-    if (rules === "a") {
+    if (rules == "a") {
       syscontent ="请作为 Google翻译 、百度翻译助手进行翻译";
       usercontent =`请如实将以下文本翻译成英文：${prompt}`;
     }else{
