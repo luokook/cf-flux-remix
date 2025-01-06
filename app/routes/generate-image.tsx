@@ -4,6 +4,7 @@ import { json } from "@remix-run/cloudflare";
 import { useActionData, Form, useNavigation, useLoaderData } from "@remix-run/react";
 import type { ActionFunction, LoaderFunction } from "@remix-run/cloudflare";
 import { createAppContext } from "../context";
+import { AppError } from '../utils/error';
 
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
@@ -227,9 +228,9 @@ const postRequest = async function(model, jsonBody){
 
 const testCfAiConnection = async function(){
     const testModel = config.CF_TRANSLATE_MODEL;
-    const testPrompt = "Hello, world!";
-    await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
-    return testPrompt;
+    const testPrompt = "hello!";
+    text = await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
+    return text;
   }
 
 
@@ -237,11 +238,11 @@ const testCfAiConnection = async function(){
   /*AI优化并翻译提示词*/
   const handlepromptfanyi = async function(){
     //const prompt1 = prompt;
-    const prompt1 = document.getElementById("prompt").value;
-    //const result = await testCfAiConnection();
+    //const prompt1 = document.getElementById("prompt").value;
+    const result = await testCfAiConnection();
     //alert("抱歉，该功能暂时未上线！");
-    //setPrompt(result);
-    setPrompt(actionData.translatedPrompt);
+    setPrompt(result);
+    //setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";   
    };
 
