@@ -44,6 +44,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
       enhance ? `---tl ${prompt}` : prompt,
       model,
       size,
+      rules,
       numSteps
     );
     console.log("Image generation successful");
