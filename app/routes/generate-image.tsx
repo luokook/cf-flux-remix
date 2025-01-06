@@ -4,7 +4,7 @@ import { json } from "@remix-run/cloudflare";
 import { useActionData, Form, useNavigation, useLoaderData } from "@remix-run/react";
 import type { ActionFunction, LoaderFunction } from "@remix-run/cloudflare";
 import { createAppContext } from "../context";
-import { AppError } from '../utils/error';
+
 
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
@@ -195,6 +195,9 @@ function getRandomInt(min, max) {
    };
 
 
+
+  
+
 const postRequest = async function(model, jsonBody){
     const account = config.CF_ACCOUNT_LIST[Math.floor(Math.random() * config.CF_ACCOUNT_LIST.length)];
     const url = `https://api.cloudflare.com/client/v4/accounts/${account.account_id}/ai/run/${model}`;
@@ -218,8 +221,8 @@ const testCfAiConnection = async function(){
     const testModel = config.CF_TRANSLATE_MODEL;
     const testPrompt = "hello!";
     const response = await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
-  const jsonResponse = await response.json();
-      return jsonResponse.result.response.trim();
+    const jsonResponse = await response.json();
+    return jsonResponse.result.response.trim();
     
   }
 
