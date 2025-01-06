@@ -237,6 +237,7 @@ const testCfAiConnection = async function(){
   const handlepromptfanyi = async function(){
     //const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
+    alert("抱歉，该功能暂时未上线！");
     //setPrompt("抱歉，该功能暂时未上线……");
     setPrompt(actionData.translatedPrompt);
      
