@@ -233,7 +233,7 @@ const testCfAiConnection = async function(){
   }
 
 
-  let prompta = "就是我";
+  
   /*AI优化并翻译提示词*/
   const handlepromptfanyi = async function(){
     //const prompt1 = prompt;
@@ -242,9 +242,7 @@ const testCfAiConnection = async function(){
     //alert("抱歉，该功能暂时未上线！");
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
-    //actionData.translatedPrompt = "哈哈哈";
-    prompta = "你是谁";
-     
+    //actionData.translatedPrompt = "哈哈哈";   
    };
 
   /*选择一个提示词*/
@@ -279,16 +277,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               提示词(支持中文)：
             </label>
             
-            <input
-              type="text"
-              id="prompta"
-              name="prompta"
-              value={prompta}
-              
-              className="w-full text-lg px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
-              placeholder="测试"
-              required
-            />
+            
             
             {/* 提示词框改用文本框，观感好点 */}
             {/*
