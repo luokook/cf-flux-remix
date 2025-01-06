@@ -430,14 +430,14 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
         
         {actionData && actionData.image && (
           <div className="mt-8">
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">AI优化和翻译后的提示词：</h2>
+              <div className="mt-8 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
+                 {`${actionData.translatedPrompt}`}
+              </div>
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">生成的图片：</h2>
-            <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
-            <div className="mt-8 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
-            {`${actionData.translatedPrompt}`}
-            </div>
+              <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
-      
-        )}
+      )}
         
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
