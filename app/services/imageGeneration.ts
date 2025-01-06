@@ -4,7 +4,7 @@ import { Config } from '../config';
 export class ImageGenerationService {
   constructor(private config: Config) {}
 
-  async generateImage(prompt: string, model: string, size: string, numSteps: number): Promise<{ prompt: string, translatedPrompt: string, image: string }> {
+  async generateImage(prompt: string, model: string, size: string, rules: string,  numSteps: number): Promise<{ prompt: string, translatedPrompt: string, image: string }> {
     console.log("Generating image with params:", { prompt, model, size, numSteps });
     const translatedPrompt = await this.translatePrompt(prompt);
     console.log("Translated prompt:", translatedPrompt);
@@ -26,17 +26,12 @@ export class ImageGenerationService {
     };
   }
 
-  private async translatePrompt(prompt: string): Promise<string> {
+  private async translatePrompt(prompt: string,rules: string): Promise<string> {
     if (!this.config.CF_IS_TRANSLATE) {
       return prompt;
     }
-
-    try {
-      const response = await this.postRequest(this.config.CF_TRANSLATE_MODEL, {
-        messages: [
-          {
-            role: "system",
-            content: `
+   let syscontent;
+    syscontent = `
                作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
                通常来自 Danbooru，PIVIX, Gelbooru，gelbooru, sankaku, yandere，Anime Gallery，Konachan 等数据库。
                请遵循以下规则：
@@ -49,7 +44,16 @@ export class ImageGenerationService {
                  7. 保留原始提示中的特殊字符，如 ()[]{}。
                  8. 不要添加 NSFW 内容。
                  9. 输出格式应为单行文本，不包含换行符。
-        `},
+        `;
+    
+    
+    try {
+      const response = await this.postRequest(this.config.CF_TRANSLATE_MODEL, {
+        messages: [
+          {
+            role: "system",
+            content: syscontent
+          },
           {
             role: "user",
             content: `请优化并翻译以下提示词：${prompt}`
