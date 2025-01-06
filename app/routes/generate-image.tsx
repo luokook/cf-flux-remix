@@ -201,36 +201,26 @@ const postRequest = async function(model, jsonBody){
     const headers = {
       'Authorization': `Bearer ${account.token}`,
       'Content-Type': 'application/json',
-    };
-
-    try {
+    };   
       const response = await fetch(url, {
         method: 'POST',
         headers: headers,
         body: JSON.stringify(jsonBody),
       });
-
       if (!response.ok) {
         const errorText = await response.text();
-        console.error(`Cloudflare API request failed: ${response.status}`, errorText);
-        throw new AppError(`Cloudflare API request failed: ${response.status} - ${errorText}`, response.status);
       }
-      setPrompt("成功了");
       return response;
-    } catch (error) {
-      console.error("Error in postRequest:", error);
-      if (error instanceof AppError) {
-        throw error;
-      }
-      throw new AppError('Failed to connect to Cloudflare API', 500);
-    }
+    
   }
 
 const testCfAiConnection = async function(){
     const testModel = config.CF_TRANSLATE_MODEL;
     const testPrompt = "hello!";
-    text = await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
-    return text;
+    const response = await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
+  const jsonResponse = await response.json();
+      return jsonResponse.result.response.trim();
+    
   }
 
 
