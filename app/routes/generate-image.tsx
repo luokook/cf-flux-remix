@@ -432,7 +432,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">生成的图片：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
-            <div className="mt-8 text-xl bg-white font-bold text-blue mb-4 text-shadow">
+            <div className="mt-8 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
             {`${actionData.translatedPrompt}`}
             </div>
           </div>
