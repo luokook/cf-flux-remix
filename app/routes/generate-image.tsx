@@ -230,7 +230,7 @@ const testCfAiConnection = async function(){
     //const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
     // setPrompt("抱歉，该功能暂时未上线……");
-     prompt = "还好哈哈哈";
+     setNumSteps(10);
    };
 
   /*选择一个提示词*/
