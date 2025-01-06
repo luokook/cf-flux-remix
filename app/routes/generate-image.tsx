@@ -61,8 +61,8 @@ const GenerateImage: FC = () => {
  const [promptxmap, setPromptxmap] = useState(""); 
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
-  let [size, setSize] = useState("1024x1024");
-  var [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
+  const [size, setSize] = useState("1024x1024");
+  const [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
   const actionData = useActionData<typeof action>();
   const navigation = useNavigation();
 
@@ -231,7 +231,9 @@ const testCfAiConnection = async function(){
     await postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
     return testPrompt;
   }
-  
+
+
+  let prompta = "就是我";
   /*AI优化并翻译提示词*/
   const handlepromptfanyi = async function(){
     //const prompt1 = prompt;
@@ -241,7 +243,7 @@ const testCfAiConnection = async function(){
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";
-    numSteps = parseInt(7, 10);
+    prompta = "你是谁";
      
    };
 
@@ -276,6 +278,17 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <label htmlFor="prompt" className="block py-2 mb-2 text-white text-lg font-semibold text-shadow">
               提示词(支持中文)：
             </label>
+            
+            <input
+              type="text"
+              id="prompta"
+              name="prompta"
+              value={prompta}
+              
+              className="w-full text-lg px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30"
+              placeholder="测试"
+              required
+            />
             
             {/* 提示词框改用文本框，观感好点 */}
             {/*
