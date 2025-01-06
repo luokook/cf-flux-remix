@@ -36,21 +36,7 @@ export class ImageGenerationService {
       syscontent ="请作为 Google翻译 、百度翻译助手进行翻译";
       usercontent =`请直接将以下文本翻译成英文：${prompt}`;
     }else{
-      syscontent = `
-               作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
-               通常来自 Danbooru，PIVIX, Gelbooru，gelbooru, sankaku, yandere，Anime Gallery，Konachan 等数据库。
-               请遵循以下规则：
-                 1. 保持原始关键词的顺序。
-                 2. 将中文关键词翻译成英文，其它语言关键词也翻译成英文。
-                 3. 添加相关的标签以增强图像质量和细节。
-                 4. 使用逗号分隔关键词。
-                 5. 保持简洁，避免重复。
-                 6. 不要使用 "和" 或 "与" 等连接词。
-                 7. 保留原始提示中的特殊字符，如 ()[]{}。
-                 8. 不要添加 NSFW 内容。
-                 9. 输出格式应为单行文本，不包含换行符。
-        `;
-      usercontent =`请优化并翻译以下提示词：${prompt}`;
+      
     } 
     
     try {
