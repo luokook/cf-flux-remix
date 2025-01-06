@@ -31,7 +31,10 @@ export class ImageGenerationService {
       return prompt;
     }
    let syscontent;
-    syscontent = `
+    if (rules === "a") {
+      syscontent ="";
+    }else{
+      syscontent = `
                作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
                通常来自 Danbooru，PIVIX, Gelbooru，gelbooru, sankaku, yandere，Anime Gallery，Konachan 等数据库。
                请遵循以下规则：
@@ -45,7 +48,7 @@ export class ImageGenerationService {
                  8. 不要添加 NSFW 内容。
                  9. 输出格式应为单行文本，不包含换行符。
         `;
-    
+    } 
     
     try {
       const response = await this.postRequest(this.config.CF_TRANSLATE_MODEL, {
