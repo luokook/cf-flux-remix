@@ -82,7 +82,7 @@ const GenerateImage: FC = () => {
     setPromptxmap("");
   };
 
-  const promptx = [random
+  const promptx = [
     "1024x1024,undefined",
     "free,唯美,random",
     "毛茸茸 怪物，幼崽，4 爪，可爱，（雪+雪），超高分辨率，完美，杰作，氛围",
