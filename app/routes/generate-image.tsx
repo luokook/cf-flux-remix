@@ -235,10 +235,11 @@ const testCfAiConnection = async function(){
   
   /*AI优化并翻译提示词*/
   const handlepromptfanyi = async function(){
-    //const result = await testCfAiConnection();
+    //const prompt1 = prompt;
     const prompt1 = document.getElementById("prompt").value;
-    alert("抱歉，该功能暂时未上线！");
-    //setPrompt("抱歉，该功能暂时未上线……");
+    //const result = await testCfAiConnection();
+    //alert("抱歉，该功能暂时未上线！");
+    //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
      
    };
@@ -297,7 +298,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={handlePromptChange}
               className="w-full text-3xl h-[180px] text-pretty px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20  font-bold text-white placeholder-white placeholder-opacity-70 transition duration-300 ease-in-out hover:bg-opacity-30" 
               rows="5"
-              placeholder="😤受不了了😤╮(︶﹏︶)╭来一个富有创意的提示词吧..."
+              placeholder="😤~受不了了~╮(︶﹏︶)╭来一个富有创意的提示词吧..."
               required
             ></textarea>
 
