@@ -63,6 +63,7 @@ const GenerateImage: FC = () => {
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   const [size, setSize] = useState("1024x1024");
   const [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
+ // const [actionData, setactionData] = useState(useActionData<typeof action>());
   const actionData = useActionData<typeof action>();
   const navigation = useNavigation();
 
@@ -230,6 +231,7 @@ const testCfAiConnection = async function(){
     //const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
     setPrompt("抱歉，该功能暂时未上线……");
+    setPrompt(size);
      
    };
 
@@ -431,12 +433,12 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
         
         {actionData && actionData.image && (
           <div className="mt-8">
+            {/*
           <h2 className="text-2xl font-bold text-white mb-4 text-shadow">有关生成参数：</h2>
               <div className="mt-1 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
-                
                 绘画模型：{model}
               </div>
-            
+            */}
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">AI优化和翻译后的提示词：</h2>
               <div className="mt-1 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
                  {`${actionData.translatedPrompt}`}
