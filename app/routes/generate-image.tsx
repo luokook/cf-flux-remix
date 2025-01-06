@@ -434,7 +434,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
             </div>
             <div className="mt-8">
-            {`翻译后提示词：${actionData.translatedPrompt}`}
+            翻译后提示词：哈哈哈
             </div>
 
       
