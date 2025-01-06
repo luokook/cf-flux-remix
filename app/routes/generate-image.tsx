@@ -353,7 +353,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           
          <div>
             <label htmlFor="rules" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              AI：
+              提示词优化策略：
             </label>
             <select
               id="rules"
@@ -362,9 +362,9 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={(e) => setRules(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              <option value="a">无设定</option>
-              <option value="b">普通常规</option>
-              <option value="c">特殊</option>
+              <option value="a">不处理(不做优化，只提供必要翻译)</option>
+              <option value="b">普通常规(基本优化策略)</option>
+              <option value="c">特殊(解锁一些特殊功能，如版权限制问题……)</option>
               
             </select>
           </div> 
