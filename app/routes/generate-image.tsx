@@ -172,7 +172,7 @@ const GenerateImage: FC = () => {
        "random,图标",
        "Furry:: 1.3 monster, cub, 4 claws, cute, (snow+snow), super high resolution, perfection, masterpiece, atmosphere",
        "皮卡丘在沙滩上晒日光浴，卡通，3d风格",
-         "江上孤舟，远处青山，中国水墨画，飞鸟高飞"
+         "塞外长城，江山如画，自由随机"
      ];
   
   const promptxmaps = Object.entries(promptx).map(([id, text]) => ({ id, text }));
@@ -241,7 +241,7 @@ const testCfAiConnection = async function(){
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";
-    this.numSteps = 10;
+    numSteps = 7;
      
    };
 
