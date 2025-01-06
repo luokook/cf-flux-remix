@@ -62,7 +62,7 @@ const GenerateImage: FC = () => {
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   let [size, setSize] = useState("1024x1024");
-  let [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
+  var [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
   const actionData = useActionData<typeof action>();
   const navigation = useNavigation();
 
