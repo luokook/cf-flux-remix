@@ -433,6 +433,9 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">生成的图片：</h2>
             <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
             </div>
+      <div className="mt-8">
+            翻译后提示词：哈哈哈
+            </div>
         )}
         
         {/* Decorative Elements */}
