@@ -25,6 +25,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   const enhance = formData.get("enhance") === "true";
   const modelId = formData.get("model") as string;
   const size = formData.get("size") as string;
+  const rules = formData.get("rules") as string;
   const numSteps = parseInt(formData.get("numSteps") as string, 10);
 
   console.log("Form data:", { prompt, enhance, modelId, size, numSteps });
@@ -63,6 +64,8 @@ const GenerateImage: FC = () => {
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
   const [size, setSize] = useState("1024x1024");
+  const [rules, setRules] = useState("b");
+  
   const [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
   const actionData = useActionData<typeof action>();
   const navigation = useNavigation();
@@ -232,10 +235,10 @@ const testCfAiConnection = async function(){
   const handlepromptfanyi = async function(){
     //const prompt1 = prompt;
     //const prompt1 = document.getElementById("prompt").value;
-    const result = await testCfAiConnection();
+    //const result = await testCfAiConnection();
     //alert("抱歉，该功能暂时未上线！");
-    setPrompt(result);
-    //setPrompt(actionData.translatedPrompt);
+    //setPrompt(result);
+    setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";   
    };
 
@@ -348,6 +351,23 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             </select>
           </div>
           
+         <div>
+            <label htmlFor="rules" className="block text-white text-lg font-semibold mb-3 text-shadow">
+              AI：
+            </label>
+            <select
+              id="rules"
+              name="rules"
+              value={rules}
+              onChange={(e) => setRules(e.target.value)}
+              className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
+            >
+              <option value="a">无设定</option>
+              <option value="b">普通常规</option>
+              <option value="c">特殊</option>
+              
+            </select>
+          </div> 
           
           <div>
             <label htmlFor="model" className="block text-white text-lg font-semibold mb-3 text-shadow">
