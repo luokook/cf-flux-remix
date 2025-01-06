@@ -31,8 +31,10 @@ export class ImageGenerationService {
       return prompt;
     }
    let syscontent;
+    let usercontent;
     if (rules === "a") {
       syscontent ="";
+      usercontent =`请如实将以下句子翻译成英文：${prompt}`;
     }else{
       syscontent = `
                作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
@@ -48,6 +50,7 @@ export class ImageGenerationService {
                  8. 不要添加 NSFW 内容。
                  9. 输出格式应为单行文本，不包含换行符。
         `;
+      usercontent =`请优化并翻译以下提示词：${prompt}`;
     } 
     
     try {
@@ -59,7 +62,7 @@ export class ImageGenerationService {
           },
           {
             role: "user",
-            content: `请优化并翻译以下提示词：${prompt}`
+            content: usercontent
           }
         ]
       });
