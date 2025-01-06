@@ -33,8 +33,8 @@ export class ImageGenerationService {
    let syscontent;
     let usercontent;
     if (rules === "a") {
-      syscontent ="";
-      usercontent =`请如实将以下句子翻译成英文：${prompt}`;
+      syscontent ="请作为 Google翻译 、百度翻译助手进行翻译";
+      usercontent =`请如实将以下文本翻译成英文：${prompt}`;
     }else{
       syscontent = `
                作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
