@@ -313,7 +313,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onClick={handlepromptfanyi}
               className="px-4 py-2 mx-2  my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-500 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
-              翻译提示词
+              翻译和优化提示词
             </button>
          </div>   
             
@@ -431,7 +431,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
         {actionData && actionData.image && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">AI优化和翻译后的提示词：</h2>
-              <div className="mt-8 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
+              <div className="mt-1 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
                  {`${actionData.translatedPrompt}`}
               </div>
             <h2 className="text-2xl font-bold text-white mb-4 text-shadow">生成的图片：</h2>
