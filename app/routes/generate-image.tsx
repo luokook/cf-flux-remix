@@ -61,7 +61,7 @@ const GenerateImage: FC = () => {
  const [promptxmap, setPromptxmap] = useState(""); 
   const [enhance, setEnhance] = useState(false);
   const [model, setModel] = useState(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
-  let [size, setSize] = useState("1024x1024");
+  var [size, setSize] = useState("1024x1024");
   const [numSteps, setNumSteps] = useState(config.FLUX_NUM_STEPS);
  // const [actionData, setactionData] = useState(useActionData<typeof action>());
   const actionData = useActionData<typeof action>();
@@ -242,7 +242,7 @@ const testCfAiConnection = async function(){
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";
-    size = 10;
+    size = "10";
      
    };
 
