@@ -231,7 +231,7 @@ const testCfAiConnection = async function(){
     //const result = await testCfAiConnection();
     const prompt1 = document.getElementById("prompt").value;
     setPrompt("抱歉，该功能暂时未上线……");
-    setPrompt(size);
+    setPrompt(size+actionData);
      
    };
 
