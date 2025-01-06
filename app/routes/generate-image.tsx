@@ -241,7 +241,7 @@ const testCfAiConnection = async function(){
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";
-    numSteps = 7;
+    numSteps = parseInt(7, 10);
      
    };
 
