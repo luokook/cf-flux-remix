@@ -62,7 +62,7 @@ const TranslationAi: FC = () => {
   const [model, setModel] = useState(config.CF_TRANSLATE_MODEL);
   const [lang1, setLang1] = useState("zh");
   const [lang2, setLang2] = useState("en");
-  const [text, setText] = useState("");
+  
   const actionData = useActionData<typeof action>();
   const navigation = useNavigation();
 
