@@ -39,7 +39,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
   }
 
   try {
-    const result = await aiTranslationService.aiTranslation(
+    let result = await aiTranslationService.aiTranslation(
       prompt,
       lang1,
       lang2,
