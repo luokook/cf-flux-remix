@@ -241,7 +241,7 @@ const testCfAiConnection = async function(){
    };
 
   
-  const handlepromptfanyi = async function(){
+  const handlepromptfanyi1 = async function(){
     //alert("抱歉，该功能暂时未上线！");
     let rules = document.getElementById("rules").value;
     let prompt1 = document.getElementById("prompt").value;
@@ -254,7 +254,7 @@ const testCfAiConnection = async function(){
    };
   
   /*AI优化并翻译提示词*/
-  const handlepromptfanyi0 = async function(){
+  const handlepromptfanyi = async function(){
     //alert("抱歉，该功能暂时未上线！");
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";
