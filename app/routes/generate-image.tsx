@@ -133,7 +133,7 @@ const GenerateImage: FC = () => {
     "baalbek temple of jupiter, in microworld render style",
     "木星的巴尔贝克神庙，微世界渲染风格",
      "随机宫崎骏风格漫画图片，风景，人物，建筑",
-   "随机,建筑,真实",
+   "Create an enchanting scene of Neuschwanstein Castle, perched majestically atop a rugged hill in the Bavarian Alps. Capture its Romantic-era architectural style, characterized by soaring towers, ornate turrets, and intricate stonework, all rendered in soft pastel hues of cream, light gray, and hints of rose. Highlight the castle's fairy-tale appearance against a backdrop of lush green forests and the serene blue of nearby alpine lakes. The scene should be set at dawn, with the first light of day casting a golden glow on the castle's façade, accentuating its textures of smooth limestone and rough-hewn granite. Wisps of morning mist weave through the valley, adding a mystical quality. Emphasize the contrast between the castle and the rugged natural landscape, suggesting its historical significance as a symbol of romanticism. Use a soft-focus, painterly style to evoke a dreamlike atmosphere, reminiscent of classic European landscapes.",
     "tiny cute ninja toy, standing character, soft smooth lighting, soft pastel colors, skottie young, 3d blender render, polycount, modular constructivism, pop surrealism, physically based rendering, square image",
    "微小可爱的等距瓷杯咖啡，柔光，色彩柔和，100 毫米镜头，3D Blender 渲染，polycount 趋势，模块化建构主义，蓝色背景，物理渲染，居中",
 "100mm photo of isometric floating island in the sky, surreal volcano, intricate, high detail, behance, microworlds smooth, macro sharp focus, centered",
