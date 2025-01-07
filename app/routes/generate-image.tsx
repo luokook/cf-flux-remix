@@ -153,7 +153,7 @@ const GenerateImage: FC = () => {
    "天空，繁星，宇宙，深邃",
    "随机,宇宙",
     "随机,夜景",
-    "随机,动物",
+    "A fit woman stands confidently, showcasing her athletic physique. She has a heart-shaped face with high cheekbones, bright blue eyes, and a warm, sun-kissed complexion. Her wavy, shoulder-length blonde hair cascades elegantly down her back. She wears sleek, fitted athletic shorts in a vibrant teal color and a matching sleeveless top that highlights her toned arms and flat stomach. The outfit is accented with subtle reflective stripes. Her expression is determined yet approachable, with a slight smile that conveys positivity. She is mid-stride, jogging on a sunlit trail, her posture upright and strong, with one arm bent at her side and the other swinging naturally. Surrounding her are lush green trees and a clear blue sky, creating an invigorating outdoor atmosphere.",
     "Tiny cute isometric porcelain cup of coffee, soft smooth lighting, with soft colors, 100mm lens, 3d blender render, trending on polycount, modular constructivism, blue background, physically based rendering, centered",
     "二维凶猛狮头，矢量插画，愤怒的眼神，足球队徽标志，二维平面，居中",
     "在夏日的晚风中，一个可爱的女孩安详地躺在秋天的草坪上，感受着轻柔的风，远处的枫叶飘落",
@@ -177,7 +177,19 @@ const GenerateImage: FC = () => {
        "random,图标",
        "Furry:: 1.3 monster, cub, 4 claws, cute, (snow+snow), super high resolution, perfection, masterpiece, atmosphere",
        "皮卡丘在沙滩上晒日光浴，卡通，3d风格",
-         "塞外长城，江山如画，自由随机"
+    "3D model of Talon Vexar, full body, detailed.",
+    "3D model of Cyrus Ashvale, full body, detailed.",
+    "随机,夜景",
+    "随机,夜景",
+   "随机,宇宙",
+    "随机,夜景",
+    "随机,夜景",
+    "随机,夜景",
+    "随机,夜景",
+    "随机,夜景",
+   "随机,宇宙",
+    "随机,夜景",
+         "塞外长城，江山如画"
      ];
   
   const promptxmaps = Object.entries(promptx).map(([id, text]) => ({ id, text }));
