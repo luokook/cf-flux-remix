@@ -384,7 +384,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
             >
               <option value="a">普通常规(不做优化，只提供必要翻译)</option>
               <option value="b">专业优化(基本优化策略)</option>
-              <option value="c">特殊优化(解锁一些特殊功能，如版权限制问题……)</option>
+            {/*  <option value="c">特殊优化(解锁一些特殊功能，如版权限制问题……)</option> */}
               <option value="d">不使用AI翻译和优化(需提供纯英文提示词)</option>
               
             </select>
