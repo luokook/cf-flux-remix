@@ -242,19 +242,19 @@ const testCfAiConnection = async function(){
    };
 
   
-  const handlepromptfanyi0 = async function(){
-
+  const handlepromptfanyi = async function(){
+    const rules = document.getElementById("rules").value;
     const prompt1 = document.getElementById("prompt").value;
-    const result = await imageGenerationService.generateImage(
+    const result = await imageGenerationService.generateTranslate(
       prompt1,
-      model
+      rules
     );
     setPrompt(result);
        
    };
   
   /*AI优化并翻译提示词*/
-  const handlepromptfanyi = async function(){
+  const handlepromptfanyi0 = async function(){
     setPrompt(actionData.translatedPrompt);
     
    };
