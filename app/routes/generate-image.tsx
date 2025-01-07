@@ -230,10 +230,8 @@ const testCfAiConnection = async function(){
     
   }
 
-
-  
-  /*AI优化并翻译提示词*/
-  const handlepromptfanyi = async function(){
+/*使用AI优化并翻译文本框内的提示词*/
+  const handlepromptfanyi1 = async function(){
     //const prompt1 = prompt;
     //const prompt1 = document.getElementById("prompt").value;
     //const result = await testCfAiConnection();
@@ -241,6 +239,12 @@ const testCfAiConnection = async function(){
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";   
+   };
+  
+  /*AI优化并翻译提示词*/
+  const handlepromptfanyi = async function(){
+    setPrompt(actionData.translatedPrompt);
+    
    };
 
   /*选择一个提示词*/
