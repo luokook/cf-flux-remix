@@ -171,7 +171,7 @@ function getRandomInt(min, max) {
           </div>
 
           <div>
-            <label htmlFor="size" className="block text-white text-lg font-semibold mb-3 text-shadow">
+            <label htmlFor="lang1" className="block text-white text-lg font-semibold mb-3 text-shadow">
               原始语言：
             </label>
             <select
@@ -186,7 +186,7 @@ function getRandomInt(min, max) {
           </div>
           
           <div>
-            <label htmlFor="size" className="block text-white text-lg font-semibold mb-3 text-shadow">
+            <label htmlFor="lang2" className="block text-white text-lg font-semibold mb-3 text-shadow">
               目标语言：
             </label>
             <select
@@ -225,11 +225,14 @@ function getRandomInt(min, max) {
         </Form>
         
             
-             <div id="text" 
-             className="w-full px-5 py-3 rounded-xl border-dashed border-[3px] border-white-800 text-lg font-semibold text-white" 
-            >
-             等待翻译结果...
-           </div>  
+             {`actionData && actionData.translatedPrompt && (
+          <div className="mt-8">
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">译文：</h2>
+            <div alt="译文" className="w-full rounded-xl shadow-lg" >
+              {`${actionData.translatedPrompt}`}
+            </div>
+          </div>
+            )`}
         
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-1000 -z-10"></div>
