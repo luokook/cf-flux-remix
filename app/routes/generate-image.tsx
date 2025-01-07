@@ -8,7 +8,7 @@ import { createAppContext } from "../context";
 
 export const loader: LoaderFunction = async ({ context }) => {
   const appContext = createAppContext(context);
-  const { config } = appContext;
+  const { imageGenerationService, config } = appContext;
   const models = Object.entries(config.CUSTOMER_MODEL_MAP).map(([id, path]) => ({ id, path }));
   return json({ models, config });
 };
@@ -59,7 +59,7 @@ export const action: ActionFunction = async ({ request, context }: { request: Re
 };
 
 const GenerateImage: FC = () => {
-  const { models, config } = useLoaderData<typeof loader>();
+  const { models, imageGenerationService, config } = useLoaderData<typeof loader>();
   const [prompt, setPrompt] = useState("");
  const [promptxmap, setPromptxmap] = useState(""); 
   const [enhance, setEnhance] = useState(false);
@@ -239,6 +239,18 @@ const testCfAiConnection = async function(){
     //setPrompt(result);
     setPrompt(actionData.translatedPrompt);
     //actionData.translatedPrompt = "哈哈哈";   
+   };
+
+  
+  const handlepromptfanyi0 = async function(){
+
+    const prompt1 = document.getElementById("prompt").value;
+    const result = await imageGenerationService.generateImage(
+      prompt1,
+      model
+    );
+    setPrompt(result);
+       
    };
   
   /*AI优化并翻译提示词*/
