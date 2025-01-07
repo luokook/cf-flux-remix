@@ -28,12 +28,12 @@ export class ImageGenerationService {
 
 
   async generateTranslate(prompt: string, rules: string): Promise<{ prompt: string, translatedPrompt: string }> {
-    
-    const translatedPrompt = await this.translatePrompt(prompt, rules);
+    let translatedPrompt1;
+    translatedPrompt1 = await this.translatePrompt(prompt, rules);
     
     return {
       prompt,
-      translatedPrompt
+      translatedPrompt: translatedPrompt1
       
     };
   }
