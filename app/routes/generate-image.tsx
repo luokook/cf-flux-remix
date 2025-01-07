@@ -231,21 +231,21 @@ const testCfAiConnection = async function(){
   }
 
 /*使用AI优化并翻译文本框内的提示词*/
-  const handlepromptfanyi1 = async function(){
+  const handlepromptfanyi2 = async function(){
+    //alert("抱歉，该功能暂时未上线！");
     //const prompt1 = prompt;
     //const prompt1 = document.getElementById("prompt").value;
-    //const result = await testCfAiConnection();
-    //alert("抱歉，该功能暂时未上线！");
-    //setPrompt(result);
-    setPrompt(actionData.translatedPrompt);
-    //actionData.translatedPrompt = "哈哈哈";   
+    const result = await testCfAiConnection();
+    setPrompt(result);
+    
    };
 
   
   const handlepromptfanyi = async function(){
-    const rules = document.getElementById("rules").value;
-    const prompt1 = document.getElementById("prompt").value;
-    const result = await imageGenerationService.generateTranslate(
+    //alert("抱歉，该功能暂时未上线！");
+    let rules = document.getElementById("rules").value;
+    let prompt1 = document.getElementById("prompt").value;
+    let result = await imageGenerationService.generateTranslate(
       prompt1,
       rules
     );
@@ -255,9 +255,12 @@ const testCfAiConnection = async function(){
   
   /*AI优化并翻译提示词*/
   const handlepromptfanyi0 = async function(){
+    //alert("抱歉，该功能暂时未上线！");
     setPrompt(actionData.translatedPrompt);
-    
+    //actionData.translatedPrompt = "哈哈哈";
    };
+
+
 
   /*选择一个提示词*/
 const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
