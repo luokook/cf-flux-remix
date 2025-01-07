@@ -45,8 +45,14 @@ export class ImageGenerationService {
    let syscontent;
     let usercontent;
     if (rules == "a") {
-      syscontent ="请作为专业翻译助手进行翻译，直接将提供的文本翻译成英文，且不需要提供任何额外的解释。";
-      usercontent =`："${prompt}"`;
+      syscontent =`请作为专业的翻译助手进行翻译。
+      请遵循以下规则：
+      1. 直接将提供的文本翻译成英文，其它语言文本也翻译成英文。
+      2. 不需要提供任何额外的解释 注释，保持简洁，避免重复。
+      3. 保留原始提示中的特殊字符，如 ()[]{}。
+      4. 不需要翻译数字和特殊字符。
+      `;
+      usercontent =`${prompt}`;
     }else{
       syscontent = `
                作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
