@@ -46,7 +46,7 @@ export class ImageGenerationService {
     let usercontent;
     if (rules == "a") {
       syscontent ="请作为专业翻译助手进行翻译";
-      usercontent =`请直接将以下文本翻译成英文：${prompt}`;
+      usercontent =`请直接将以下文本翻译成英文且不需要提供解析："${prompt}"`;
     }else{
       syscontent = `
                作为 Stable Diffusion Prompt 、 Flux Prompt 、midjourney Prompt 提示词专家，您将从关键词中创建提示，
