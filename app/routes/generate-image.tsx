@@ -249,7 +249,7 @@ const testCfAiConnection = async function(){
       prompt1,
       rules
     );
-    setPrompt(result);
+    setPrompt(result.translatedPrompt);
        
    };
   
