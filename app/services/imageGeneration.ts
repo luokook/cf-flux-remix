@@ -6,12 +6,9 @@ export class ImageGenerationService {
 
   async generateImage(prompt: string, model: string, size: string, rules: string,  numSteps: number): Promise<{ prompt: string, translatedPrompt: string, image: string }> {
     console.log("Generating image with params:", { prompt, model, size, numSteps });
-    if (rules == "d") {
-      const translatedPrompt = prompt;
-      
-    }else{
+    
        const translatedPrompt = await this.translatePrompt(prompt, rules);
-    }
+    
     console.log("Translated prompt:", translatedPrompt);
     const isFluxModel = model === this.config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"];
     let imageBase64;
