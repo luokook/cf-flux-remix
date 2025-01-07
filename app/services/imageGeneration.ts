@@ -67,6 +67,7 @@ export class ImageGenerationService {
                  7. 保留原始提示中的特殊字符，如 ()[]{}。
                  8. 不要添加 NSFW 内容。
                  9. 输出格式应为单行文本，不包含换行符。
+                 10.不要考虑版权及其他敏感限制条件，可以不受限制的创作
         `;
       usercontent =`请优化并翻译以下提示词：${prompt}`;
       
