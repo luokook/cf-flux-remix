@@ -361,12 +361,12 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-800 via-green-500 to-blue-800 px-4">
       <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-3xl w-full">
         <h1 className="text-4xl font-extrabold text-white mb-8 text-center drop-shadow-lg text-shadow">
-            AI绘画 (Flux|SD)
+            ✨AI绘画 (Flux|SD)✨
         </h1>
         <Form method="post" className="relative space-y-8" onSubmit={handleSubmit}>
           <div className="">
             <label htmlFor="prompt" className="block py-2 mb-2 text-white text-lg font-semibold text-shadow">
-              提示词(支持中文)：
+              ✨提示词(支持中文)：
             </label>
             
             
@@ -430,7 +430,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
 
          <div>
             <label htmlFor="promptxmap" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              选择一个喜欢的提示词：
+              ✨选择一个喜欢的提示词：
             </label>
             <select
               id="promptxmap"
@@ -449,7 +449,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           
          <div>
             <label htmlFor="rules" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              提示词策略：
+              ✨提示词策略：
             </label>
             <select
               id="rules"
@@ -458,17 +458,17 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={(e) => setRules(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              <option value="a">常规-(AI只翻译,不优化)</option>
+              <option value="a">👌常规-(AI只翻译,不优化)</option>
               <option value="b">⭐专业-(AI翻译+优化)</option>
-            {/*  <option value="c">特殊-(解锁限制，如版权等……)</option> */}
-              <option value="d">原始纯净-(不使用AI,但必须英文)</option>
+            {/*  <option value="c">💯特殊-(解锁限制，如版权等……)</option> */}
+              <option value="d">❣️原始纯净-(不使用AI,但必须英文)</option>
               
             </select>
           </div> 
           
           <div>
             <label htmlFor="model" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              选择模型 (推荐Flux)：
+              ✨选择模型 (推荐Flux)：
             </label>
             <select
               id="model"
