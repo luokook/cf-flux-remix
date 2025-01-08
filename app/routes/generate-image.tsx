@@ -412,7 +412,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onClick={handlepromptfanyi}
               className="px-4 py-2 mx-2  my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-green-700 via-purple-500 to-green-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
-              ✨复制下方AI优化的提示词
+              ✨复制下方AI优化的提示词✨
             </button>
           
            <button
@@ -420,7 +420,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onClick={handleResetpromptclear}
               className="absolute right-4 px-4 py-2 mx-2 my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
-            ❌清空提示❌
+            ❌清空提示
             </button>
           
          </div>   
@@ -506,7 +506,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           </div>
           <div>
             <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              生成步数 (Flux模型 4-8,其他模型 4-20)：
+              生成步数：( Flux模型 4-8,其他模型 4-20 )
             </label>
             <input
               type="number"
@@ -538,7 +538,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
                           ${isSubmitting ? "rounded-full bg-gradient-to-r from-purple-700 via-pink-400 to-red-700 cursor-not-allowed" : "rounded-xl bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "🙏🏼生成中..." : "启动✨生成"}
+              {isSubmitting ? "🙏🏼生成中..." : "✨启动生成✨"}
             </button>
             
             
@@ -562,11 +562,11 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
                 绘画模型：{model}
               </div>
             */}
-            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">AI优化和翻译后的提示词：</h2>
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">✨AI优化和翻译后的提示词：</h2>
               <div className="mt-1 p-3 rounded-xl text-xl bg-white font-bold text-blue mb-4 text-shadow">
                  {`${actionData.translatedPrompt}`}
               </div>
-            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">生成的图片：</h2>
+            <h2 className="text-2xl font-bold text-white mb-4 text-shadow">✨生成的图片：</h2>
               <img src={`data:image/jpeg;base64,${actionData.image}`} alt="Generated Image" className="w-full rounded-xl shadow-lg" />
           </div>
       )}
