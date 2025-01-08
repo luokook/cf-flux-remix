@@ -458,10 +458,10 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={(e) => setRules(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              <option value="a">👌常规👌-(AI只翻译,不优化)</option>
-              <option value="b">⭐专业⭐-(AI翻译+优化)</option>
-            {/*  <option value="c">💯特殊💯-(解锁限制，如版权等……)</option> */}
-              <option value="d">❣️原始纯净❣️-(不使用AI,但必须英文)</option>
+              <option value="a">👌常规👌 - AI只翻译,不优化</option>
+              <option value="b">⭐专业⭐ - AI翻译+优化</option>
+            {/*  <option value="c">💯特殊💯 - AI解锁限制，如版权等</option> */}
+              <option value="d">❣️原始纯净❣️ - 不使用AI,但必须英文</option>
               
             </select>
           </div> 
