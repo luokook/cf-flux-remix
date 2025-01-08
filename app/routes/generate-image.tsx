@@ -420,7 +420,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onClick={handleResetpromptclear}
               className="absolute right-4 px-4 py-2 mx-2 my-3 border-dashed  border-[3px] border-white-600 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-red-400 via-pink-600 to-red-800 transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white-600 shadow-xl"
               >
-            ❌清空提示
+            ❌清空提示❌
             </button>
           
          </div>   
@@ -458,10 +458,10 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={(e) => setRules(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              <option value="a">👌常规-(AI只翻译,不优化)</option>
-              <option value="b">⭐专业-(AI翻译+优化)</option>
-            {/*  <option value="c">💯特殊-(解锁限制，如版权等……)</option> */}
-              <option value="d">❣️原始纯净-(不使用AI,但必须英文)</option>
+              <option value="a">👌常规👌-(AI只翻译,不优化)</option>
+              <option value="b">⭐专业⭐-(AI翻译+优化)</option>
+            {/*  <option value="c">💯特殊💯-(解锁限制，如版权等……)</option> */}
+              <option value="d">❣️原始纯净❣️-(不使用AI,但必须英文)</option>
               
             </select>
           </div> 
@@ -538,7 +538,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
                           ${isSubmitting ? "rounded-full bg-gradient-to-r from-purple-700 via-pink-400 to-red-700 cursor-not-allowed" : "rounded-xl bg-gradient-to-r from-purple-700 via-green-500 to-blue-700"}`}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "🙏🏼生成中..." : "✨启动生成✨"}
+              {isSubmitting ? "🙏🏼生成中🌪️..." : "✨启动生成✨"}
             </button>
             
             
