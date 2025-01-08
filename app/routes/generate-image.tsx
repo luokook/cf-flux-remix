@@ -123,31 +123,37 @@ const GenerateImage: FC = () => {
     `Real photograph of a black cat playing an electric guitar, the cat looks like a rocker, it is on a rock concert stage`,
 `caricature illustration, children's comic book character, hilariously exaggerated features --ar 1:2 --stylize 750`,
 `white Cat and flower in a Takeshi Kitano style, in a minimalist and humorous setting, simple and straightforward style with a touch of modernity and humor. 8k --ar 3:4 --s 50 --v 6.0 --style raw`,
-`A cute, kawaii spiritual llama, vector, no background --s 180`,
+`离离原上草，一岁一枯荣`,
+    `A cute, kawaii spiritual llama, vector, no background --s 180`,
 `((chibi)), full-body`,
 `amalfi coast, oil painting, impressionist style, sunny day, colorful buildings and domes overlooking the sea with sailboats in background, lush greenery on cliffs, vibrant colors, detailed brushstrokes, textured canvas effect, impressionistic technique, high resolution --ar 1:2 --stylize 750`,
-`impressionist painting on canvas of Tuscany, beautiful landscape with Tuscan farmhouse, in the style of impressionist masters, warm colors, delicate brushstrokes --ar 1:2 --stylize 750`,
+`空山新雨后，天气晚来秋`,
+    `impressionist painting on canvas of Tuscany, beautiful landscape with Tuscan farmhouse, in the style of impressionist masters, warm colors, delicate brushstrokes --ar 1:2 --stylize 750`,
 `a girl walking through a field, in the style of ethereal trees, dark yellow and azure, majestic, sweeping seascapes, photorealistic representation, graceful balance, wimmelbilder, orange --ar 72:101 --stylize 750 --v 6`,
 `photography, orange hue, korean woman model, solid orange backdrop, using a camera setup that mimics a large aperture, f/1.4 --ar 9:16 --style raw`,
 `随机,二次元`,
 `Baroque punk type halloween party design of the chief diety in greek mythology "zeus" with a syntwave expression in the style of risograph printed portraiture on artist’s paper --s 50`,
 `A flat illustration of a cat wearing a witch's hat and sitting on the skull, minimalist, warm, utilitarianism, geometric, danish design --s 50`,
 `A flat illustration of a lady doing meditating, with plants in the house, Matisse poster, calming colors --s 50`,
-`3d rendering, artistic anatomical render, ultra quality, human body with transparent skin revealing structure instead of organs, delicate and intricate creative patterns, monochrome with back lighting, scientific yet fantastical illustration, concept art blending biology with botany, surreal and ethereal quality, 4090 RTX, ray tracing render, ultra realistic, UHD, many details --ar 9:16 --style raw --stylize 200`,
+`停车坐爱枫林晚，枫叶红于二月花`,
+    `3d rendering, artistic anatomical render, ultra quality, human body with transparent skin revealing structure instead of organs, delicate and intricate creative patterns, monochrome with back lighting, scientific yet fantastical illustration, concept art blending biology with botany, surreal and ethereal quality, 4090 RTX, ray tracing render, ultra realistic, UHD, many details --ar 9:16 --style raw --stylize 200`,
 `A girl holding a huge flower, micro art, girl standing in the autumn field basking in the sun, autumn sun shining brightly, simple background, simple lines, a lot of white space, tilted picture, upward view, strong visual impact --niji 6 --seed 1896939470`,
-`An incredible 3D illustration of depicting a gardener standing on a massive globe, watering. The globe is adorned with green leaves and butterflies, symbolizing the planet's vitality and beauty. The background is a soft, serene beige hue, while the phrase "Take care of the Planet" is prominently displayed in 3D, crafted from green leaves and shadow, serving as a poignant reminder of our responsibility towards environmental conservation and appreciation.`,
+`随风潜入夜，润物细无声`,
+    `An incredible 3D illustration of depicting a gardener standing on a massive globe, watering. The globe is adorned with green leaves and butterflies, symbolizing the planet's vitality and beauty. The background is a soft, serene beige hue, while the phrase "Take care of the Planet" is prominently displayed in 3D, crafted from green leaves and shadow, serving as a poignant reminder of our responsibility towards environmental conservation and appreciation.`,
 `A strikingly mystical creature, reminiscent of a large, magical female monster, takes center stage in this vintagepunk artwork. The image, possibly a captivating painting or a carefully captured photograph, showcases an awe-inspiring big white creature with an ethereal aura. Its mottled shade of white encompasses a weathered yet mesmerizing appearance, emanating an air of enigmatic beauty. Every minute detail of this creature's otherworldly form, from its intricate scales to its flowing mane, is portrayed with exquisite quality, capturing the viewer's attention. This artistry exudes a sense of vintage charm while simultaneously evoking a futuristic essence, lending the image a unique and captivating appeal.`,
 `Jinx, on top of a police car, explosions behind her, fire, chaos, minigun, far view, bullet hell, <lora:more_details:0.7>, <lora:beautiful_detailed_eyes:0.7>, jinxlol, <lora:JinxLol:0.9>`,
-`Kyoto Animation stylized anime mixed with tradition Chinese artworks~ A dragon flying at modern cyberpunk fantasy world. Cinematic Lighting, ethereal light, intricate details, extremely detailed, incredible details, full colored, complex details, insanely detailed and intricate, hypermaximalist, extremely detailed with rich colors. masterpiece, best quality, aerial view, HDR, UHD, unreal engine. plump looking at the camera, smooth thighs, (glittery jewelry) ((acrylic illustration, by artgerm, by kawacy, by John Singer Sargenti) dark Fantasy background, glittery jewelry, Representative, fair skin, beautiful face, Rich in details High quality, gorgeous, glamorous, 8k, super detail, gorgeous light and shadow, detailed decoration, detailed lines`,
+`旧时王谢堂前燕，飞入寻常百姓家`,
+    `Kyoto Animation stylized anime mixed with tradition Chinese artworks~ A dragon flying at modern cyberpunk fantasy world. Cinematic Lighting, ethereal light, intricate details, extremely detailed, incredible details, full colored, complex details, insanely detailed and intricate, hypermaximalist, extremely detailed with rich colors. masterpiece, best quality, aerial view, HDR, UHD, unreal engine. plump looking at the camera, smooth thighs, (glittery jewelry) ((acrylic illustration, by artgerm, by kawacy, by John Singer Sargenti) dark Fantasy background, glittery jewelry, Representative, fair skin, beautiful face, Rich in details High quality, gorgeous, glamorous, 8k, super detail, gorgeous light and shadow, detailed decoration, detailed lines`,
 `Full body, Small highly detailed incorporeal fairy made of silvery light, Bokeh pollen specs multicolored magic particles in the air background by Moebius, perfectly lifelike beautiful face, detailed pretty eyes, glossy lips, pastels bloom lighting detail, (intricate mystical aura Detailing By Amanda Sage), beautiful rendering by FromSoftware Artwork, Elden Ring aesthetic, Boos Stage Battle, Ray Tracing Beams, Extremely Smooth Blending, highly detailed, 8k sharp focus`,
 `a chinease dragon surrounded by flowers, the dragon has a long body akin to a snake, his long body curls forming a elegan image, the dragon skin is scaled, the dragon has a beautiful color, the dragon has horns, (elegant),traditional chinease image aesthetic,mytological creature`,
 `Rampart female character from Apex legends,(ultra-detailed:1.6), extremely detailed face, masterpiece, (extreme shading:1.0), expressive eyes, (curvy:1.3), (fangs:1.2), (low ponytail:1.3), black hair with blue inner hair, (glowing goggles:1.4), (oversized jacket:1.5), (floating glowing welding machine:1.1), (magical flames:1.5), (baggy shorts:1.4), (floating, typing on glowing holographic welding machine:1.4), (atmospheric perspective:1.3), (cyberpunk dystopian lot:1.3), (neon signs:1.4), streets, vivid colors, atmospheric lighting, (night:1.3)`,
 `extremely realistic, steampunk eye, full view of eye, blurry middle background, ornamental, macro shot, HD, Hyperrealistic, mystic, baroque, octane render, sharp center focus, sharpness on background, 8k`,
-`Photo of a ultra realistic sailing ship, dramatic light, pale sunrise, cinematic lighting, battered, low angle, trending on artstation, 4k, hyper realistic, focused, extreme details, unreal engine 5, cinematic, masterpiece, art by studio ghibli, intricate artwork by john william turner`,
+`大江东去浪淘尽，千古风流人物`,
+    `Photo of a ultra realistic sailing ship, dramatic light, pale sunrise, cinematic lighting, battered, low angle, trending on artstation, 4k, hyper realistic, focused, extreme details, unreal engine 5, cinematic, masterpiece, art by studio ghibli, intricate artwork by john william turner`,
 `A panoramic view of large futuristic city Sci-fi, photorealistic`,
 `A poisonous Rose covered in Ice Crystals in the middle of a once vibrant garden that is now frosted, A venomous snake in the garden. The moonlight casts an eerie glow on the frozen petals, highlighting the intricate patterns of the ice crystals. The snake slithers sinuously through the icy undergrowth, its scales glistening with a frosty sheen. The garden, once teeming with life and color, now lies silent and frozen under the moonlit night,`,
 `FULL BODY female, A stunning illustration of an ethereal neural network organism, female full body is robotic skeleton, stunning facial details, art, elegant, hologram, maximum details, intricate, detailed, futuristic, science fiction, HR Giger`,
-`FULL BODY female, A stunning illustration of an ethereal neural network organism, female full body is robotic skeleton, stunning facial details, art, elegant, hologram, maximum details, intricate, detailed, futuristic, science fiction, HR Giger`,
+`生于忧患，死于安乐`,
 `A stunning illustration of an ethereal neural network women organism, female full body is robotic skeleton, stunning body and facial details, art, elegant, hologram, maximum details, intricate, detailed, futuristic, science fiction, HR Giger`,
 `BODY complete female, A stunning illustration of an ethereal neural network organism, female full body is robotic skeleton, stunning facial details, art, elegant, hologram, maximum details, intricate, detailed, futuristic, science fiction, HR Giger`,
     `霓虹灯照亮的屋顶在暮色的天空下闪闪发光，在被雨水打磨的表面上投下充满活力的倒影。高耸的摩天大楼装饰着脉动的全息图和闪烁的广告，营造出万花筒般的色彩 - 电蓝色、火热的粉红色和深紫色交织在一起，跳起迷人的舞蹈。在前景中，增强的梦想家们穿着时髦的彩虹色服装，在城市丛林中穿行，他们的眼睛闪耀着数字叠加层的光芒。缕缕霓虹灯烟雾在他们周围蜿蜒曲折，低语着由梦想与科技交织而成的现实秘密。当无人机在头顶飞驰时，气氛充满了期待，它们的灯光在广阔的大都市背景下描绘出错综复杂的图案。遥远的合成器音乐嗡嗡声弥漫在空气中，与电流的柔和嗡嗡声融为一体，创造出一首未来的交响乐，想象与现实在令人叹为观止的奇观中碰撞。`,
@@ -156,6 +162,7 @@ const GenerateImage: FC = () => {
       `一位美丽的白发仙女，长着翅膀，晚上坐在魔法森林中长满青苔的地面上，周围环绕着发光的萤火虫，举起魔杖施展魔法。艺术家詹姆斯·C·风格的丰富多彩的奇幻插图。克里斯滕森，插图的黄金时代，发光的，年长的领主，约翰·鲍尔凯·尼尔森埃德蒙·杜拉克，蒂姆·沃克，宾得克k1000，色彩鲜艳，深红色和紫色，以及绿色。 --ar 3:4 --personalize ioa83pi --v 6.1`,
       `very disgust face brown fluffy character wearing a pink bow on white background.`,
     `Girl in spacesuit, spaceship inside, Tsutomu Nihei style, Sidonia no Kishi, gigantism, laser generator, multi-story space, futuristic style, Sci-fi, hyperdetail, laser in center, laser from the sky, energy clots, acceleration, light flash, speed, anime, drawing, 8K, HD, super-resolution, manga graphics, Drawing, First-Person, 8K, HD, Super-Resolution --q 2 --ar 1:2`,
+    `窈窕淑女，君子好逑`,
     `girl in light clothing, style artist oyari ashito, against the night sky, night, portrait, satisfaction, enjoyment, manga graphics, anime, drawing, dark exposure, bright colors, the highest quality, the highest detail, first-person view, dark tones, Clouds --q 2 --ar 9:16`,
     `Abstract style waterfalls, wildlife inside the silhouette of a woman head that is a double exposure photograph . Non-representational, colors and shapes, expression of feelings, imaginative, highly detailed`, 
     `维多利亚风格的房间采用空灵、柔和的绿色和蓝色调色板，捕捉到一种褪色的宏伟感。一位头发飘逸的女子背对着观众站着，穿着一件与房间精致纹理融为一体的复古礼服。巨大的、超现实的花朵--玫瑰和百合花--充满了她周围的空间，它们的花瓣擦着墙壁和天花板。一只帝王般的白孔雀优雅地栖息在华丽的椅子上，为场景增添了梦幻般的神奇气质。柔和的漫光透过透明窗帘过滤，投射出柔和的阴影。 --ar 4:3 --s 50 --v 6.1 --style raw`,
@@ -243,6 +250,7 @@ const GenerateImage: FC = () => {
     `magic realism  masterpiece , x ray  animal totem, translucent  owl , glowing , luminism ,bioluminescence, fire wings, night    , splash art , alcohol ink  , intricately detailed  ,sharp focus ,extremely detailed, dark  fantasy,   glowing, colorful painting, rich color, HDR, octane render, digital illustration, cinematic light `,
       `充满活力的场景捕捉了金·琼斯（Kim Jones）设想的迪奥2029年春季系列的精髓，展现了传统与颠覆之间的平衡，一位20岁的时尚达人散发着迪奥模特的优雅，同时展示了2029年的未来派服装，她快乐的表情为时尚的办公室增添了光彩，一只大鹿和异想天开的动物增强了视觉叙事，使用尼康Z9无反光镜数码相机拍摄，85毫米镜头，f/1.8,16 K分辨率， --ar 9：16 --stylize 500 --v 6.1`,
        `logo,现代感强，商业品质`,
+    `关关雎鸠，在河之洲`,
     `春风得意马蹄疾，一日看尽长安花`,
        "塞外长城，江山如画"
      ];
@@ -449,10 +457,10 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               onChange={(e) => setRules(e.target.value)}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             >
-              <option value="a">普通常规(不做优化，只提供必要翻译)</option>
-              <option value="b">专业优化(基本优化策略)</option>
-            {/*  <option value="c">特殊优化(解锁一些特殊功能，如版权限制问题……)</option> */}
-              <option value="d">不使用AI翻译和优化(需提供纯英文提示词)</option>
+              <option value="a">常规-(AI只翻译,不优化)</option>
+              <option value="b">专业-(AI翻译+优化)</option>
+            {/*  <option value="c">特殊-(解锁限制，如版权等……)</option> */}
+              <option value="d">原始纯净-(不使用AI,但必须英文)</option>
               
             </select>
           </div> 
@@ -497,7 +505,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           </div>
           <div>
             <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              生成步数 (数值范围4-8)：
+              生成步数 (Flux模型 4-8,其他模型 4-20)：
             </label>
             <input
               type="number"
