@@ -471,7 +471,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           
           <div>
             <label htmlFor="model" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              ✨选择模型 (推荐Flux)：
+              ✨选择模型：(推荐 Flux 、SD-XL-Lightning)
             </label>
             <select
               id="model"
