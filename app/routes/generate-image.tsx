@@ -502,14 +502,16 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               <option value="512x512">512x512</option>
               <option value="768x768">768x768</option>
               <option value="1024x1024">1024x1024</option>
-              <option value="1024x768">1024x768</option>
+            {/*  
+            <option value="1024x768">1024x768</option>
               <option value="2048x1024">2048x1024</option>
               <option value="2048x2048">2048x2048</option>
+              */}
             </select>
           </div>
           <div>
             <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              生成步数：( Flux模型 4-8,其他模型 4-20 )
+              生成步数：( Flux模型 4-8,其他模型 4-20。注：后2种模型设置大步数效果才明显 )
             </label>
             <input
               type="number"
