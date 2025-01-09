@@ -358,12 +358,12 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
   };
 
   const handleModelChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    let modelname = e.target.value;
     setModel(e.target.value);
-    setPrompt(e.target.value);
-    if(e.target.value=="FLUX.1-Schnel"){
+    if(modelname=="FLUX.1-Schnel"){
      setNumSteps(4);
     }else{
-      if(e.target.value=="SD-XL-Lightnin"){
+      if(modelname=="SD-XL-Lightnin"){
          setNumSteps(10);
       }else{
          setNumSteps(15);
