@@ -361,8 +361,8 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     
    // let numSteps = document.getElementById("numSteps");
     var numSteps = document.querySelector('#numSteps');
-      numSteps.setAttribute('min',4);
-      numSteps.setAttribute('max',20);
+    //numSteps.setAttribute('min',4);
+      
     setModel(e.target.value);
     if(e.target.value=="FLUX.1-Schnell-CF"){
       setNumSteps(4);
@@ -370,9 +370,10 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     }
     else if(e.target.value=="SD-XL-Lightning-CF"){
          setNumSteps(10);
+         numSteps.setAttribute('max',20);
     }else{
          setNumSteps(15);
-      
+         numSteps.setAttribute('max',20);
     }
     
     
