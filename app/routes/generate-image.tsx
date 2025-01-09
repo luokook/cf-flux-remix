@@ -361,18 +361,20 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     
    // let numSteps = document.getElementById("numSteps");
     var numSteps = document.querySelector('#numSteps');
-    //numSteps.setAttribute('min',4);
-      
+    
     setModel(e.target.value);
     if(e.target.value=="FLUX.1-Schnell-CF"){
       setNumSteps(4);
+      numSteps.setAttribute('min',1);
       numSteps.setAttribute('max',8);
     }
     else if(e.target.value=="SD-XL-Lightning-CF"){
          setNumSteps(10);
+         numSteps.setAttribute('min',4);
          numSteps.setAttribute('max',20);
     }else{
          setNumSteps(15);
+         numSteps.setAttribute('min',4);
          numSteps.setAttribute('max',20);
     }
     
@@ -539,7 +541,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               value={numSteps}
               onChange={(e) => setNumSteps(parseInt(e.target.value, 10))}
               min="4"
-              max="100"
+              max="20"
               disabled={isSubmitting}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
             />
