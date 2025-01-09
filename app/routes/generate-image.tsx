@@ -364,9 +364,9 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     
     setModel(e.target.value);
     if(e.target.value=="FLUX.1-Schnell-CF"){
-      setNumSteps(4);
+      setNumSteps(2);
       numSteps.setAttribute('min',1);
-      numSteps.setAttribute('max',8);
+      numSteps.setAttribute('max',20);
     }
     else if(e.target.value=="SD-XL-Lightning-CF"){
          setNumSteps(10);
@@ -532,7 +532,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
           </div>
           <div>
             <label htmlFor="numSteps" className="block text-white text-lg font-semibold mb-3 text-shadow">
-              生成步数：( Flux模型 4-8,其他模型 4-20。注：后2种模型设置大步数效果才明显 )
+              生成步数：( Flux模型 1-8,其他模型 4-20。注：后2种模型设置大步数效果才明显 )
             </label>
             <input
               type="number"
@@ -540,7 +540,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
               name="numSteps"
               value={numSteps}
               onChange={(e) => setNumSteps(parseInt(e.target.value, 10))}
-              min="4"
+              min="1"
               max="20"
               disabled={isSubmitting}
               className="w-full px-5 py-3 rounded-xl border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white bg-opacity-20 text-white transition duration-300 ease-in-out hover:bg-opacity-30"
