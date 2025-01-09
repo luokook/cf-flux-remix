@@ -358,10 +358,15 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
   };
 
   const handleModelChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    let numSteps = document.getElementById("numSteps");
     
+    //var numSteps = document.querySelector('#numSteps');
+
     setModel(e.target.value);
     if(e.target.value=="FLUX.1-Schnell-CF"){
-     setNumSteps(4);
+      setNumSteps(4);
+      numSteps.setAttribute('min',4);
+      numSteps.setAttribute('max',8);
     }
     else if(e.target.value=="SD-XL-Lightning-CF"){
          setNumSteps(10);
