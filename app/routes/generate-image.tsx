@@ -80,6 +80,7 @@ const GenerateImage: FC = () => {
   const handleReset = () => {
     setPrompt("");
     setEnhance(false);
+    setRules("b");
     setModel(config.CUSTOMER_MODEL_MAP["FLUX.1-Schnell-CF"]);
     setSize("1024x1024");
     setNumSteps(config.FLUX_NUM_STEPS);
@@ -358,6 +359,7 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
 
   const handleModelChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setModel(e.target.value);
+    setPrompt(e.target.value);
     if(e.target.value=="FLUX.1-Schnel"){
      setNumSteps(4);
     }else if(e.target.value=="SD-XL-Lightnin"){
