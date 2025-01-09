@@ -362,10 +362,12 @@ const handlepromptxmapChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setPrompt(e.target.value);
     if(e.target.value=="FLUX.1-Schnel"){
      setNumSteps(4);
-    }else if(e.target.value=="SD-XL-Lightnin"){
-     setNumSteps(10);
     }else{
-      setNumSteps(15);
+      if(e.target.value=="SD-XL-Lightnin"){
+         setNumSteps(10);
+      }else{
+         setNumSteps(15);
+      }
     }
     
   };
