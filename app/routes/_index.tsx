@@ -121,11 +121,18 @@ export default function Index() {
         
         <div className="relative flex flex-wrap m-1 p-2 rounded-xl border-dashed border-2 border-white-800 mt-8 text-white justify-center text-center">
           <h2 className="text-2xl font-bold mt-2 mb-3 w-full">友情链接</h2>
+          
+          <Link
+                to="https://yesbolt.luokook.us.kg/"
+                className="flex-auto text-center px-5 py-2 mx-1.5 my-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                ❤️YesBolt(另一款作品)❤️
+              </Link>
           <Link
                 to="https://fluxai.luokook.us.kg/"
                 className="flex-auto text-center px-5 py-2 mx-1.5 my-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               >
-                另一款作品❤️
+                fluxai(另一款作品)❤️
               </Link>
         <Link
                 to="https://flux.remix.us.kg/"
@@ -161,12 +168,7 @@ export default function Index() {
                 hub-cha
               </Link>
 
-              <Link
-                to=""
-                className="flex-auto text-center px-5 py-2 mx-1.5 my-1 text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 to-indigo-700 rounded-xl transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              >
-                ~~~~~
-              </Link>
+              
             
             <Link
                 to="https://ai-paint.luis.fun"
